@@ -1,0 +1,6 @@
+G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\Git\ProgramManager\bin\Debug\ProgramManager.dll
+G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\Git\ProgramManager\bin\Debug\ProgramManager.pdb
+G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\Git\ProgramManager\obj\Debug\LogicalSchemeManager.csproj.CoreCompileInputs.cache
+G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\Git\ProgramManager\obj\Debug\ProgramManager.dll
+G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\Git\ProgramManager\obj\Debug\ProgramManager.pdb
+G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\Git\ProgramManager\obj\Debug\LogicalSchemeManager.csprojAssemblyReference.cache

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD583FE2-9B5A-4D7D-87AE-57EFE745A92B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProgramManager</RootNamespace>
+    <AssemblyName>ProgramManager</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommandConfig\CommandGraph.cs" />
+    <Compile Include="CommandConfig\ICommandConfiguration.cs" />
+    <Compile Include="Commands\Command.cs" />
+    <Compile Include="Commands\ICommand.cs" />
+    <Compile Include="CommandTypes\Atriburie.cs" />
+    <Compile Include="CommandTypes\Decision.cs" />
+    <Compile Include="CommandTypes\Eticheta.cs" />
+    <Compile Include="CommandTypes\ICommandType.cs" />
+    <Compile Include="CommandTypes\ReadVariable.cs" />
+    <Compile Include="CommandTypes\WriteText.cs" />
+    <Compile Include="CommandTypes\WriteVariableValue.cs" />
+    <Compile Include="Condition\Condition.cs" />
+    <Compile Include="Condition\ConstCondition.cs" />
+    <Compile Include="Condition\ICondition.cs" />
+    <Compile Include="Condition\NegCondition.cs" />
+    <Compile Include="Expression\ConstValue.cs" />
+    <Compile Include="Expression\Expression.cs" />
+    <Compile Include="Expression\IExpression.cs" />
+    <Compile Include="Expression\Variable.cs" />
+    <Compile Include="Observer\IObservable.cs" />
+    <Compile Include="Observer\IObserver.cs" />
+    <Compile Include="Operations\BasicOp\IOperator.cs" />
+    <Compile Include="Operations\BasicOp\Operator.cs" />
+    <Compile Include="Operations\RelationalOp\IRelationalOperator.cs" />
+    <Compile Include="Operations\RelationalOp\RelationalOperator.cs" />
+    <Compile Include="ProgramManager.cs" />
+    <Compile Include="Terminal\ConsoleObject.cs" />
+    <Compile Include="Terminal\ITerminalEntity.cs" />
+    <Compile Include="VariableConfig\GlobalVariables.cs" />
+    <Compile Include="VariableConfig\IVariableConfiguration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
