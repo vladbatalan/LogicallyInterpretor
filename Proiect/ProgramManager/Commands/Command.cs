@@ -2,7 +2,7 @@
 
 namespace LogicalSchemeManager
 {
-    class Command : ICommand
+    public class Command : ICommand
     {
         private ICommandType _commandType;
 

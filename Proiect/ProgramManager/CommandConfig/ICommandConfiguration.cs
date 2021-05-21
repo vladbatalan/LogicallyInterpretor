@@ -24,6 +24,11 @@ namespace LogicalSchemeManager
             get;
         }
 
+        public ICommand EndPoint
+        {
+            get;
+        }
+
         public ICommand GetNextElement(ICommand key, bool isNextTrue);
     }
 }
