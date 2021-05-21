@@ -10,3 +10,9 @@ D:\Fac_an3_sem2\IP\Tema\LogicallyInterpretor\Proiect\ProgramManager\obj\Debug\Lo
 D:\Fac_an3_sem2\IP\Tema\LogicallyInterpretor\Proiect\ProgramManager\obj\Debug\LogicalSchemeManager.csproj.CoreCompileInputs.cache
 D:\Fac_an3_sem2\IP\Tema\LogicallyInterpretor\Proiect\ProgramManager\obj\Debug\ProgramManager.dll
 D:\Fac_an3_sem2\IP\Tema\LogicallyInterpretor\Proiect\ProgramManager\obj\Debug\ProgramManager.pdb
+G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\CurrentGit\LogicallyInterpretor\Proiect\ProgramManager\bin\Debug\ProgramManager.dll
+G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\CurrentGit\LogicallyInterpretor\Proiect\ProgramManager\bin\Debug\ProgramManager.pdb
+G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\CurrentGit\LogicallyInterpretor\Proiect\ProgramManager\obj\Debug\LogicalSchemeManager.csprojAssemblyReference.cache
+G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\CurrentGit\LogicallyInterpretor\Proiect\ProgramManager\obj\Debug\LogicalSchemeManager.csproj.CoreCompileInputs.cache
+G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\CurrentGit\LogicallyInterpretor\Proiect\ProgramManager\obj\Debug\ProgramManager.dll
+G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\CurrentGit\LogicallyInterpretor\Proiect\ProgramManager\obj\Debug\ProgramManager.pdb
