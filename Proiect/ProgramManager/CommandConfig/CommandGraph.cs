@@ -8,10 +8,20 @@ namespace LogicalSchemeManager
     class CommandGraph : ICommandConfiguration
     {
         private Dictionary<ICommand, ICommand[]> _graph;
+        private ICommand _startPoint;
+        private ICommand _endPoint;
 
         public CommandGraph()
         {
             _graph = new Dictionary<ICommand, ICommand[]>();
+        }
+        public CommandGraph(ICommand start, ICommand end)
+        {
+            _startPoint = start;
+            _endPoint = end;
+            _graph = new Dictionary<ICommand, ICommand[]>();
+            AddElement(_startPoint);
+            AddElement(_endPoint);
         }
 
         public Dictionary<ICommand, ICommand[]> Graph {
@@ -26,19 +36,15 @@ namespace LogicalSchemeManager
         public ICommand StartPoint {
             get
             {
-                foreach(ICommand cmd in CommandList)
-                {
-                    if(cmd.CommandType is Eticheta)
-                    {
-                        Eticheta start = (Eticheta)cmd.CommandType;
-                        if(start.Name == "Start")
-                        {
-                            return cmd;
-                        }
-                    }
-                    
-                }
-                return null;
+                return _startPoint;
+            }
+        }
+
+        public ICommand EndPoint
+        {
+            get
+            {
+                return _endPoint;
             }
         }
 

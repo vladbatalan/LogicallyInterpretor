@@ -25,13 +25,5 @@ namespace LogicalSchemeInterpretor
             CommandType.Execute();
         }
 
-
-        public void ProcessString(object sender, EventArgs e)
-        {
-            Console.WriteLine((sender as TextBox).Text);
-        }
-
-
-
     }
 }

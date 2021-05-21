@@ -10,3 +10,9 @@ D:\Fac_an3_sem2\IP\Tema\LogicallyInterpretor\Proiect\ProgramManager\obj\Debug\Lo
 D:\Fac_an3_sem2\IP\Tema\LogicallyInterpretor\Proiect\ProgramManager\obj\Debug\LogicalSchemeManager.csproj.CoreCompileInputs.cache
 D:\Fac_an3_sem2\IP\Tema\LogicallyInterpretor\Proiect\ProgramManager\obj\Debug\ProgramManager.dll
 D:\Fac_an3_sem2\IP\Tema\LogicallyInterpretor\Proiect\ProgramManager\obj\Debug\ProgramManager.pdb
+C:\Users\Adrian\OneDrive\Desktop\LogicallyInterpretor\Proiect\ProgramManager\bin\Debug\ProgramManager.dll
+C:\Users\Adrian\OneDrive\Desktop\LogicallyInterpretor\Proiect\ProgramManager\bin\Debug\ProgramManager.pdb
+C:\Users\Adrian\OneDrive\Desktop\LogicallyInterpretor\Proiect\ProgramManager\obj\Debug\LogicalSchemeManager.csprojAssemblyReference.cache
+C:\Users\Adrian\OneDrive\Desktop\LogicallyInterpretor\Proiect\ProgramManager\obj\Debug\LogicalSchemeManager.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\OneDrive\Desktop\LogicallyInterpretor\Proiect\ProgramManager\obj\Debug\ProgramManager.dll
+C:\Users\Adrian\OneDrive\Desktop\LogicallyInterpretor\Proiect\ProgramManager\obj\Debug\ProgramManager.pdb

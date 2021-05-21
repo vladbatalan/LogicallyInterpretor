@@ -59,7 +59,13 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="CommandPanel.cs">
+    <Compile Include="PanelClass\AttribCommandPannel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PanelClass\CommandPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PanelClass\LabelCommandPanel.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Program.cs" />

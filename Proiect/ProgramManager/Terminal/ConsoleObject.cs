@@ -2,7 +2,7 @@
 
 namespace LogicalSchemeManager
 {
-    class ConsoleObject : ITerminalEntity, IObserver
+    public class ConsoleObject : ITerminalEntity, IObserver
     {
         public void Notify(string text)
         {

@@ -9,6 +9,7 @@ namespace LogicalSchemeInterpretor
     public partial class Form1 : Form
     {
         private ProgramManager _programManager;
+        private ConsoleObject consoleObject;
 
         private int contorAtribuire = 0;
         private int contorDecizie = 0;
@@ -19,6 +20,44 @@ namespace LogicalSchemeInterpretor
         {
             InitializeComponent();
 
+            
+
+            CommandPanel panelStart = new CommandPanel(); 
+            panelStart.BackColor = Color.Transparent;
+            panelStart.BackgroundImage = Properties.Resources.START;
+            panelStart.BackgroundImageLayout = ImageLayout.Stretch;
+            panelStart.Location = new Point(431, 10);
+            panelStart.Margin = new Padding(15, 10, 15, 10);
+            panelStart.Name = "panelStart";
+            panelStart.Size = new Size(140, 92);
+            panelStart.TabIndex = 3;
+            panelStart.MouseDown += new MouseEventHandler(this.MyControl_MouseDown);
+            panelStart.MouseMove += new MouseEventHandler(this.MyControl_MouseMove);
+            panelStart.CommandType = new Eticheta("Start");
+
+            CommandPanel panelEnd = new CommandPanel();
+            panelEnd.BackColor = Color.Transparent;
+            panelEnd.BackgroundImage = Properties.Resources.END;
+            panelEnd.BackgroundImageLayout = ImageLayout.Stretch;
+            panelEnd.Location = new Point(431, 615);
+            panelEnd.Margin = new Padding(15, 10, 15, 10);
+            panelEnd.Name = "panelEnd";
+            panelEnd.Size = new Size(140, 92);
+            panelEnd.TabIndex = 4;
+            panelEnd.MouseDown += new MouseEventHandler(this.MyControl_MouseDown);
+            panelEnd.MouseMove += new MouseEventHandler(this.MyControl_MouseMove);
+            panelEnd.CommandType = new Eticheta("End");
+
+
+            panelDrawing.Controls.Add(panelStart);
+            panelDrawing.Controls.Add(panelEnd);
+            pictureBoxDrawing.SendToBack();
+
+
+            Console.WriteLine("Creating Program Manager...");
+            ProgramManager myManager = new ProgramManager(panelStart, panelEnd);
+            Console.WriteLine("Program Manager created!");
+            consoleObject = new ConsoleObject();
         }
 
         private Point MouseDownLocation;
@@ -93,7 +132,6 @@ namespace LogicalSchemeInterpretor
                     textBox.Name = "textBoxAtribuire" + contorAtribuire;
                     textBox.Size = new Size(141, 20);
                     textBox.TabIndex = 0;
-                    textBox.LostFocus += new EventHandler(panel.ProcessString);
                     panel.Controls.Add(textBox);
                     panel.CommandType = new Atribuire();
                     contorAtribuire++;

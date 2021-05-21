@@ -1,7 +1,7 @@
 ﻿
 namespace LogicalSchemeManager
 {
-    class Expression : IExpression
+    public class Expression : IExpression
     {
         private IExpression _firstTerm;
         private IExpression _secondTerm;

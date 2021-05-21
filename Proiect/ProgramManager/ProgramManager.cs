@@ -8,17 +8,17 @@ namespace LogicalSchemeManager
         private ICommandConfiguration _commandConfiguration;
         private ICommand _currentCommand;
 
-        public ProgramManager()
+        public ProgramManager(ICommand start, ICommand end)
         {
             // initializez cele 2 componente primare
             _variableConfiguration = new GlobalVariables();
-            _commandConfiguration = new CommandGraph();
+            _commandConfiguration = new CommandGraph(start, end);
 
             // trebuie sa existe o instanta de tip Eticheta cu numele "Start" pentru a incepe
-            ICommand startCmd = new Command(new Eticheta("Start"));
+            //ICommand startCmd = new Command(new Eticheta("Start"));
 
             // adaug comanda in lista de comenzi
-            _commandConfiguration.AddElement(startCmd);
+            //_commandConfiguration.AddElement(startCmd);
         }
 
         public ProgramManager(string filePath)
