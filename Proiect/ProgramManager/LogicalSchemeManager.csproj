@@ -47,7 +47,7 @@
     <Compile Include="CommandConfig\ICommandConfiguration.cs" />
     <Compile Include="Commands\Command.cs" />
     <Compile Include="Commands\ICommand.cs" />
-    <Compile Include="CommandTypes\Atriburie.cs" />
+    <Compile Include="CommandTypes\Atribuire.cs" />
     <Compile Include="CommandTypes\Decision.cs" />
     <Compile Include="CommandTypes\Eticheta.cs" />
     <Compile Include="CommandTypes\ICommandType.cs" />

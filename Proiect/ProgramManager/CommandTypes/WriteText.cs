@@ -3,7 +3,7 @@ using System;
 
 namespace LogicalSchemeManager
 {
-    class WriteText : ICommandType, IObservable
+    public class WriteText : ICommandType, IObservable
     {
         private string _text;
         private IObserver _afisareObserver;

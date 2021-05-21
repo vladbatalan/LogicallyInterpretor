@@ -11,3 +11,29 @@ G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\Git\LogicalSchemeIn
 G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\Git\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.csproj.CopyComplete
 G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\Git\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.exe
 G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\Git\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.pdb
+C:\Users\Adrian\OneDrive\Desktop\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\bin\Debug\LogicalSchemeInterpretor.exe.config
+C:\Users\Adrian\OneDrive\Desktop\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\bin\Debug\LogicalSchemeInterpretor.exe
+C:\Users\Adrian\OneDrive\Desktop\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\bin\Debug\LogicalSchemeInterpretor.pdb
+C:\Users\Adrian\OneDrive\Desktop\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\bin\Debug\ProgramManager.dll
+C:\Users\Adrian\OneDrive\Desktop\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\bin\Debug\ProgramManager.pdb
+C:\Users\Adrian\OneDrive\Desktop\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.csprojAssemblyReference.cache
+C:\Users\Adrian\OneDrive\Desktop\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.Form1.resources
+C:\Users\Adrian\OneDrive\Desktop\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.Properties.Resources.resources
+C:\Users\Adrian\OneDrive\Desktop\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.csproj.GenerateResource.cache
+C:\Users\Adrian\OneDrive\Desktop\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\OneDrive\Desktop\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.csproj.CopyComplete
+C:\Users\Adrian\OneDrive\Desktop\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.exe
+C:\Users\Adrian\OneDrive\Desktop\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.pdb
+D:\Fac_an3_sem2\IP\Tema\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\bin\Debug\LogicalSchemeInterpretor.exe.config
+D:\Fac_an3_sem2\IP\Tema\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\bin\Debug\LogicalSchemeInterpretor.exe
+D:\Fac_an3_sem2\IP\Tema\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\bin\Debug\LogicalSchemeInterpretor.pdb
+D:\Fac_an3_sem2\IP\Tema\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\bin\Debug\ProgramManager.dll
+D:\Fac_an3_sem2\IP\Tema\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\bin\Debug\ProgramManager.pdb
+D:\Fac_an3_sem2\IP\Tema\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.csprojAssemblyReference.cache
+D:\Fac_an3_sem2\IP\Tema\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.Form1.resources
+D:\Fac_an3_sem2\IP\Tema\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.Properties.Resources.resources
+D:\Fac_an3_sem2\IP\Tema\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.csproj.GenerateResource.cache
+D:\Fac_an3_sem2\IP\Tema\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.csproj.CoreCompileInputs.cache
+D:\Fac_an3_sem2\IP\Tema\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.csproj.CopyComplete
+D:\Fac_an3_sem2\IP\Tema\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.exe
+D:\Fac_an3_sem2\IP\Tema\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.pdb

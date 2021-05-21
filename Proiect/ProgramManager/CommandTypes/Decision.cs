@@ -2,7 +2,7 @@
 using System;
 namespace LogicalSchemeManager
 {
-    class Decision : ICommandType
+    public class Decision : ICommandType
     {
         private ICondition _condition;
         private Boolean _nextElement;
@@ -10,6 +10,10 @@ namespace LogicalSchemeManager
         public Decision(ICondition conditie)
         {
             _condition = conditie;
+        }
+
+        public Decision()
+        {
         }
 
         public ICondition Conditie

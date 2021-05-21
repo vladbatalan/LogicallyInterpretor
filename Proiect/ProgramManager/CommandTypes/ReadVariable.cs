@@ -2,7 +2,7 @@
 
 namespace LogicalSchemeManager
 {
-    class ReadVariable : ICommandType
+     class ReadVariable : ICommandType
     {
         private Variable _variabila;
         private ITerminalEntity _terminal;

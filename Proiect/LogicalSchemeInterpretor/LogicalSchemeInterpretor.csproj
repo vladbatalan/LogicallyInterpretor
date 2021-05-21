@@ -59,6 +59,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="CommandPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -102,6 +105,33 @@
       <Project>{dd583fe2-9b5a-4d7d-87ae-57efe745a92b}</Project>
       <Name>LogicalSchemeManager</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atribuire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decizie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\citeste_var.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scrie_var.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eticheta_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eticheta_in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AFIS_TEXT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\START.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\END.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

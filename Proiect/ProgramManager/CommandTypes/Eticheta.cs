@@ -2,13 +2,16 @@
 
 namespace LogicalSchemeManager
 {
-    class Eticheta : ICommandType
+    public class Eticheta : ICommandType
     {
         private string _name;
 
         public Eticheta(string nume)
         {
             _name = nume;
+        }
+        public Eticheta( )
+        {
         }
 
         public string Name

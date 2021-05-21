@@ -2,7 +2,7 @@
 
 namespace LogicalSchemeManager
 {
-    class WriteVariableValue : ICommandType, IObservable
+    public class WriteVariableValue : ICommandType, IObservable
     {
         private Variable _internalVar;
         private IObserver _afisareObserver;
