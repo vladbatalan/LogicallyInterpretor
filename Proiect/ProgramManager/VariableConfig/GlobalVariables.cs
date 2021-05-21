@@ -39,6 +39,7 @@ namespace LogicalSchemeManager
         {
             _listOfVariables = new List<Variable>();
         }
+
         #endregion
 
         #region Properties

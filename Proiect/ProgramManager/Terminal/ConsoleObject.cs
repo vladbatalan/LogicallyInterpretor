@@ -21,7 +21,7 @@ namespace LogicalSchemeManager
     /// <summary>
     /// This object is the implamenetation of an ITerminalEntity and is used to resemble a console
     /// </summary>
-    class ConsoleObject : ITerminalEntity, IObserver
+    public class ConsoleObject : ITerminalEntity, IObserver
     {
         #region Methods
 

@@ -46,17 +46,24 @@ namespace LogicalSchemeManager
         /// <summary>
         /// The implicit constructor
         /// </summary>
-        public ProgramManager()
+        public ProgramManager() { }
+
+        /// <summary>
+        /// Parameter constructor that adds the start and the end point of the program
+        /// </summary>
+        /// <param name="start">The start point of the program</param>
+        /// <param name="end">The end point of the program</param>
+        public ProgramManager(ICommand start, ICommand end)
         {
             // initializez cele 2 componente primare
             _variableConfiguration = new GlobalVariables();
-            _commandConfiguration = new CommandGraph();
+            _commandConfiguration = new CommandGraph(start, end);
 
             // trebuie sa existe o instanta de tip Eticheta cu numele "Start" pentru a incepe
-            ICommand startCmd = new Command(new Eticheta("Start"));
+            //ICommand startCmd = new Command(new Eticheta("Start"));
 
             // adaug comanda in lista de comenzi
-            _commandConfiguration.AddElement(startCmd);
+            //_commandConfiguration.AddElement(startCmd);
         }
 
         /// <summary>

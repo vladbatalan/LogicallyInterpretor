@@ -19,7 +19,7 @@ namespace LogicalSchemeManager
     /// <summary>
     /// This class is a composite of expressions 
     /// </summary>
-    class Expression : IExpression
+    public class Expression : IExpression 
     {
         #region Fields
         /// <summary>
