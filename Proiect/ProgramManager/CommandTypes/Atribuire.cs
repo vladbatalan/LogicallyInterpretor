@@ -38,7 +38,7 @@ namespace LogicalSchemeManager
 
         #region Constructors
         /// <summary>
-        /// The implicit consctructor
+        /// The implicit constructor
         /// </summary>
         public Atribuire()
         {

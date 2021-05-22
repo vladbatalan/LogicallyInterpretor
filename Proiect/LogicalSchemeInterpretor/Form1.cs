@@ -188,5 +188,10 @@ namespace LogicalSchemeInterpretor
         {
 
         }
+
+        private void panelEtichetaIn_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

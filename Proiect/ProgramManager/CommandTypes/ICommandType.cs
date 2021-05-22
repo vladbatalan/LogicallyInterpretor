@@ -32,6 +32,7 @@ namespace LogicalSchemeManager
         /// </summary>
         /// <returns>A bool that describes the branch taken to the next command to be executed</returns>
         public bool GetNext();
+
         #endregion Abstract Methods
     }
 }

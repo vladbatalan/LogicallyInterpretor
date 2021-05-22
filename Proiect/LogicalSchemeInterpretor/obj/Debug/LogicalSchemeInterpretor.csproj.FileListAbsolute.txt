@@ -50,3 +50,16 @@ G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\CurrentGit\Logicall
 G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\CurrentGit\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.csproj.CopyComplete
 G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\CurrentGit\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.exe
 G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\CurrentGit\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.pdb
+D:\IP\Proiect\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\bin\Debug\LogicalSchemeInterpretor.exe.config
+D:\IP\Proiect\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\bin\Debug\LogicalSchemeInterpretor.exe
+D:\IP\Proiect\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\bin\Debug\LogicalSchemeInterpretor.pdb
+D:\IP\Proiect\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\bin\Debug\ProgramManager.dll
+D:\IP\Proiect\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\bin\Debug\ProgramManager.pdb
+D:\IP\Proiect\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.csprojAssemblyReference.cache
+D:\IP\Proiect\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.Form1.resources
+D:\IP\Proiect\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.Properties.Resources.resources
+D:\IP\Proiect\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.csproj.GenerateResource.cache
+D:\IP\Proiect\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.csproj.CoreCompileInputs.cache
+D:\IP\Proiect\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.csproj.CopyComplete
+D:\IP\Proiect\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.exe
+D:\IP\Proiect\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.pdb

@@ -25,3 +25,9 @@ C:\Users\Adrian\OneDrive\Desktop\LogicallyInterpretor\Proiect\ProgramManager\obj
 C:\Users\Adrian\OneDrive\Desktop\LogicallyInterpretor\Proiect\ProgramManager\obj\Debug\ProgramManager.dll
 C:\Users\Adrian\OneDrive\Desktop\LogicallyInterpretor\Proiect\ProgramManager\obj\Debug\ProgramManager.pdb
 >>>>>>> 9bf8d2ca03ae5117e64b4564c85d04712c198f6d
+D:\IP\Proiect\LogicallyInterpretor\Proiect\ProgramManager\bin\Debug\ProgramManager.dll
+D:\IP\Proiect\LogicallyInterpretor\Proiect\ProgramManager\bin\Debug\ProgramManager.pdb
+D:\IP\Proiect\LogicallyInterpretor\Proiect\ProgramManager\obj\Debug\LogicalSchemeManager.csprojAssemblyReference.cache
+D:\IP\Proiect\LogicallyInterpretor\Proiect\ProgramManager\obj\Debug\LogicalSchemeManager.csproj.CoreCompileInputs.cache
+D:\IP\Proiect\LogicallyInterpretor\Proiect\ProgramManager\obj\Debug\ProgramManager.dll
+D:\IP\Proiect\LogicallyInterpretor\Proiect\ProgramManager\obj\Debug\ProgramManager.pdb
