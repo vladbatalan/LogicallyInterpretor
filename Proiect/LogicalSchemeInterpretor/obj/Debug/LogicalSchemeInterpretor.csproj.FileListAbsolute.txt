@@ -78,6 +78,9 @@ G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\LogicallyInterpreto
 G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.csproj.CopyComplete
 G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.exe
 G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Proiect\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\obj\Debug\LogicalSchemeInterpretor.pdb
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Emergency\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\bin\Debug\LogicalSchemeInterpretor.exe.config
 G:\Laboratoare\Anul_III_Sem_II\Ingineria Proiectarii\Emergency\LogicallyInterpretor\Proiect\LogicalSchemeInterpretor\bin\Debug\LogicalSchemeInterpretor.exe
