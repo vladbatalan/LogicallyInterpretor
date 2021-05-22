@@ -69,6 +69,7 @@
     <Compile Include="Operations\RelationalOp\IRelationalOperator.cs" />
     <Compile Include="Operations\RelationalOp\RelationalOperator.cs" />
     <Compile Include="ProgramManager.cs" />
+    <Compile Include="Terminal\Logger.cs" />
     <Compile Include="Terminal\ConsoleObject.cs" />
     <Compile Include="Terminal\ITerminalEntity.cs" />
     <Compile Include="VariableConfig\GlobalVariables.cs" />

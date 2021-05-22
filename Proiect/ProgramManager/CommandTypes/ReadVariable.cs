@@ -2,8 +2,8 @@
 
 namespace LogicalSchemeManager
 {
-     class ReadVariable : ICommandType
-    {
+     public class ReadVariable : ICommandType
+     {
         private Variable _variabila;
         private ITerminalEntity _terminal;
         public ReadVariable(Variable variabila, ITerminalEntity terminal)
