@@ -20,7 +20,7 @@ namespace LogicalSchemeManager
     /// <summary>
     /// The execution of the command retain atributions of the variable read
     /// </summary>
-    class ReadVariable : ICommandType
+    public class ReadVariable : ICommandType
     {
         #region Fields
         /// <summary>
