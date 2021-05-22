@@ -28,7 +28,7 @@ namespace LogicalSchemeManager
         /// <summary>
         /// A list of strings that is considered to be input from the user
         /// </summary>
-        private List<string> _userInputList;
+        private string[] _userInputList;
 
         /// <summary>
         /// The index of the user input
@@ -49,7 +49,7 @@ namespace LogicalSchemeManager
         public Logger()
         {
             // Set the private members
-            _userInputList = new List<string>();
+            _userInputList = null;
             _logText = "";
             _userInputIndex = 0;
         }
@@ -58,7 +58,7 @@ namespace LogicalSchemeManager
         /// Parameter constructor
         /// </summary>
         /// <param name="userInputStrings">A list of strings given as input from the user</param>
-        public Logger(List<string> userInputStrings)
+        public Logger(string[] userInputStrings)
         {
             // Set the private members
             _userInputList = userInputStrings;
@@ -94,7 +94,7 @@ namespace LogicalSchemeManager
         /// <returns>The input from the user</returns>
         public string ReadFromTerminal()
         {
-            if(_userInputIndex >= _userInputList.Count)
+            if(_userInputList == null || _userInputIndex >= _userInputList.Length)
             {
                 throw new Exception("There are no more user inputs given to be read!");
             }

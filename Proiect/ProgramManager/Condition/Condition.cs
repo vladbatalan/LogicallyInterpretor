@@ -20,7 +20,7 @@ namespace LogicalSchemeManager
     /// <summary>
     /// The class incapsulates a condition that can be evaluated
     /// </summary>
-    class Condition : ICondition
+    public class Condition : ICondition
     {
         #region Fields
         /// <summary>

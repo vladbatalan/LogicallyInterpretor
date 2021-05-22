@@ -21,7 +21,7 @@ namespace LogicalSchemeManager
     /// <summary>
     /// The Class is incapsulating a realtional operator such as >=, >, <, <=, ==, !=
     /// </summary>
-    class RelationalOperator : IRelationalOperator
+    public class RelationalOperator : IRelationalOperator
     {
         #region Fields
         /// <summary>
