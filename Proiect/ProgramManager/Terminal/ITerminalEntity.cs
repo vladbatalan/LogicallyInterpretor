@@ -20,7 +20,7 @@ namespace LogicalSchemeManager
     /// <summary>
     /// This interface resembles a terminal entity. It can read or write information from and to a terminal
     /// </summary>
-    interface ITerminalEntity
+    public interface ITerminalEntity
     {
         #region Abstract Methods
         /// <summary>

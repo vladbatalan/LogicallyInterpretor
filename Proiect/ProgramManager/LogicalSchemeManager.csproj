@@ -69,12 +69,15 @@
     <Compile Include="Operations\RelationalOp\IRelationalOperator.cs" />
     <Compile Include="Operations\RelationalOp\RelationalOperator.cs" />
     <Compile Include="ProgramManager.cs" />
+    <Compile Include="Terminal\Logger.cs" />
     <Compile Include="Terminal\ConsoleObject.cs" />
     <Compile Include="Terminal\ITerminalEntity.cs" />
     <Compile Include="VariableConfig\GlobalVariables.cs" />
     <Compile Include="VariableConfig\IVariableConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -23,29 +23,7 @@ namespace LogicalSchemeManager
     /// </summary>
     public interface ICommandConfiguration
     {
-        #region Abstract Methods
-        /// <summary>
-        /// The method that adds an element
-        /// </summary>
-        public void AddElement(ICommand command);
-        /// <summary>
-        /// The method that removes an output
-        /// </summary>
-        public void RemoveElement(ICommand command);
-        /// <summary>
-        /// The method that bind the first element
-        /// </summary>
-        public void BindElementFirst(ICommand father, ICommand firstSon);
-        /// <summary>
-        /// The method that bind the second element
-        /// </summary>
-        public void BindElementSecond(ICommand father, ICommand secondSon);
-        /// <summary>
-        /// The abstract method returns the branch towards the next command
-        /// </summary>
-        /// <returns>A command that describes the branch taken to the next element to be executed</returns>
-        public ICommand GetNextElement(ICommand key, bool isNextTrue);
-        #endregion Abstract Methods
+       
 
         #region Abstract Properties
         /// <summary>
@@ -72,6 +50,37 @@ namespace LogicalSchemeManager
             get;
         }
 
+        /// <summary>
+        /// The abstract property exposes the end point of the command
+        /// </summary>
+        public ICommand EndPoint
+        {
+            get;
+        }
         #endregion Abstract Properties
+
+        #region Abstract Methods
+        /// <summary>
+        /// The method that adds an element
+        /// </summary>
+        public void AddElement(ICommand command);
+        /// <summary>
+        /// The method that removes an output
+        /// </summary>
+        public void RemoveElement(ICommand command);
+        /// <summary>
+        /// The method that bind the first element
+        /// </summary>
+        public void BindElementFirst(ICommand father, ICommand firstSon);
+        /// <summary>
+        /// The method that bind the second element
+        /// </summary>
+        public void BindElementSecond(ICommand father, ICommand secondSon);
+        /// <summary>
+        /// The abstract method returns the branch towards the next command
+        /// </summary>
+        /// <returns>A command that describes the branch taken to the next element to be executed</returns>
+        public ICommand GetNextElement(ICommand key, bool isNextTrue);
+        #endregion Abstract Methods
     }
 }

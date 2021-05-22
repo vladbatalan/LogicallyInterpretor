@@ -70,7 +70,12 @@ namespace LogicalSchemeManager
                 case "*":
                     return firstTerm.Execute() * secondTerm.Execute();
                 case "/":
-                    return firstTerm.Execute() / secondTerm.Execute();
+                    double second = secondTerm.Execute();
+                    if(second == 0)
+                    {
+                        throw new ArithmeticException("Cannot divide by zero!");
+                    }
+                    return firstTerm.Execute() / second;
                 default:
                     return 0;
             }

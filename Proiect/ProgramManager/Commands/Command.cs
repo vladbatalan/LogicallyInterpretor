@@ -20,7 +20,7 @@ namespace LogicalSchemeManager
     /// <summary>
     /// The class describes a basic command
     /// </summary>
-    class Command : ICommand
+    public class Command : ICommand
     {
         #region Fields
         /// <summary>
