@@ -18,15 +18,33 @@ namespace TestUnit
         /// <summary>
         /// The terminal on which the test will be conducted
         /// </summary>
-        private Logger _logger;
+        private Logger _logger = new Logger();
         #endregion
 
         #region Properties
+        /// <summary>
+        /// This propery makes the StartingPoint more accessible 
+        /// </summary>
         private ICommand StartPoint => _programManager.Connections.StartPoint;
+
+        /// <summary>
+        /// This property makes the EndingPoint more accessible
+        /// </summary>
         private ICommand EndPoint => _programManager.Connections.EndPoint;
+
+        /// <summary>
+        /// This property makes the command configuration more accessible
+        /// </summary>
         private ICommandConfiguration Connections => _programManager.Connections;
 
+        /// <summary>
+        /// This property makes the variable configuration more accessible
+        /// </summary>
+        private IVariableConfiguration AllVariables => _programManager.AllVariables;
+
         #endregion Properties
+
+        #region TestInitializer
 
         /// <summary>
         /// This method is called before each test
@@ -43,6 +61,9 @@ namespace TestUnit
             _programManager = new ProgramManager(startCommand, endCommand);
         }
 
+        #endregion TestInitializer
+
+        #region TestMethods
         /// <summary>
         /// This test checks if the followinf program:
         /// Start:
@@ -54,9 +75,6 @@ namespace TestUnit
         {
             // Expected output
             string expected = "Hello world!";
-
-            // Create the logger
-            _logger = new Logger();
 
             // Create write text command
             ICommand writeTextCommand = new Command(new WriteText("Hello world!", _logger));
@@ -94,13 +112,18 @@ namespace TestUnit
             // User input for the logger
             string[] userInput = { "3.14", "2.71" };
 
-            // Create the logger
-            _logger = new Logger(userInput);
+            // Update the logger user input
+            _logger.UserInput = userInput;
 
             // Create and add variables
             Variable a = new Variable("a");
             Variable b = new Variable("b");
             Variable sum = new Variable("sum");
+
+            // Add variables
+            AllVariables.AddElement(a);
+            AllVariables.AddElement(b);
+            AllVariables.AddElement(sum);
 
             // Create commands
             ICommand readA = new Command(new ReadVariable(a, _logger));
@@ -140,13 +163,15 @@ namespace TestUnit
         [ExpectedException(typeof(Exception))]
         public void Check_divide_by_zero()
         {
-            // Create the logger
-            _logger = new Logger();
-
             // Create and add variables
             Variable a = new Variable("a");
             Variable b = new Variable("b");
             Variable sum = new Variable("sum");
+
+            // Add variables
+            AllVariables.AddElement(a);
+            AllVariables.AddElement(b);
+            AllVariables.AddElement(sum);
 
             // Create commands
             ICommand atribSum = new Command(new Atribuire(sum, new Expression(a, new Operator("/"), b)));
@@ -167,7 +192,7 @@ namespace TestUnit
         }
 
         /// <summary>
-        /// This test checks if the followinf program:
+        /// This test checks if the following program:
         /// Start:
         /// ReadVariable(a);
         /// if(a > 10)
@@ -185,11 +210,14 @@ namespace TestUnit
             // User input
             string[] userInput = { "20" };
 
-            // Create the logger
-            _logger = new Logger(userInput);
+            // Update the logger user input
+            _logger.UserInput = userInput;
 
             // Create and add variables
             Variable a = new Variable("a");
+
+            // Add variables
+            AllVariables.AddElement(a);
 
             // Create write text command
             ICommand readA = new Command(new ReadVariable(a, _logger));
@@ -217,7 +245,98 @@ namespace TestUnit
             // Test the output
             Assert.AreEqual(expected, _logger.LoggerText);
         }
+
+        /// <summary>
+        /// This test checks if the following program:
+        /// Start:
+        /// ReadVariable(n);
+        /// Loop:
+        /// if(i < n)
+        /// {
+        ///     WriteVariable(i);
+        ///     i = i + 1;
+        ///     JumpTo(Loop);
+        /// }
+        /// End:
+        /// </summary>
+        [TestMethod]
+        public void Loop_program_test()
+        {
+            // Setting the number of loops
+            int nValue = 10;
+
+            // Expected output
+            string expected = "";
+
+            // Setting expected output
+            for(int index = 0; index < nValue; index++)
+            {
+                expected += "i(" + index + ")";
+            }
+
+            // User input
+            string[] userInput = { nValue.ToString() };
+
+            // Update the logger user input
+            _logger.UserInput = userInput;
+
+            // Add variables
+            AllVariables.AddElement(new Variable("i"));
+            AllVariables.AddElement(new Variable("n"));
+
+            // Create write text command
+            ICommand readN = new Command(new ReadVariable(AllVariables.GetVariableByName("n"), _logger));
+            ICommand loopEtc = new Command(new Eticheta("Loop"));
+            ICommand decision = new Command(new Decision(
+                new Condition(
+                    AllVariables.GetVariableByName("i"), 
+                    new RelationalOperator("<"), 
+                    AllVariables.GetVariableByName("n")
+                    )
+                ));
+            ICommand writeIndex = new Command(new WriteVariableValue(AllVariables.GetVariableByName("i"), _logger));
+            ICommand incIndex = new Command(new Atribuire(AllVariables.GetVariableByName("i"), new Expression(
+                AllVariables.GetVariableByName("i"), 
+                new Operator("+"),
+                new ConstValue(1)
+                )));
+
+            // Append the new command 
+            Connections.AddElement(readN);
+            Connections.AddElement(decision);
+            Connections.AddElement(writeIndex);
+            Connections.AddElement(incIndex);
+            Connections.AddElement(loopEtc);
+
+            // Create the bindings
+            Connections.BindElementFirst(StartPoint, readN);
+            Connections.BindElementFirst(readN, loopEtc);
+            Connections.BindElementFirst(loopEtc, decision);
+            Connections.BindElementFirst(decision, writeIndex);
+            Connections.BindElementFirst(writeIndex, incIndex);
+            Connections.BindElementFirst(incIndex, loopEtc);
+            Connections.BindElementSecond(decision, EndPoint);
+
+            // Execute program
+            _programManager.RunProgram();
+
+            // Test the output
+            Assert.AreEqual(expected, _logger.LoggerText);
+        }
+        #endregion TestMethods
+
+        #region TestCleanup
+        [TestCleanup]
+        public void TestCleanup()
+        {
+            // Clean the logger
+            _logger.CleanLogger();
+
+        }
+
+        #endregion TestCleanup
     }
+
 
 }
 

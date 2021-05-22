@@ -75,6 +75,15 @@ namespace LogicalSchemeManager
         {
             get => _logText;
         }
+
+        /// <summary>
+        /// Property that mmakes user input more accessible
+        /// </summary>
+        public string[] UserInput
+        {
+            get => _userInputList;
+            set => _userInputList = value;
+        }
         #endregion Properties
 
 
@@ -116,6 +125,14 @@ namespace LogicalSchemeManager
         {
             // Append the new text to the logger
             _logText += text;
+        }
+
+        public void CleanLogger()
+        {
+            // Set the private members
+            _userInputList = null;
+            _logText = "";
+            _userInputIndex = 0;
         }
         #endregion
     }
