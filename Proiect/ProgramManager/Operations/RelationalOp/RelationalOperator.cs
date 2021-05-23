@@ -76,7 +76,7 @@ namespace LogicalSchemeManager
                 case "!=":
                     return firstExpression.Execute() != secondExpression.Execute();
                 default:
-                    return false;
+                    throw new Exception("Wrong relational operator! It must be one of ('<', '<=', '==', '>', '>=', '!=').");
             }
 
         }

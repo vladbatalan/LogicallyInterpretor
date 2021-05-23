@@ -1,7 +1,22 @@
-﻿using LogicalSchemeManager;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        ProgramManagerTest.cs                                    *
+ *  Copyright:   (c) 2021, Batalan Vlad                                   *
+ *  E-mail:      vlad.batalan@student.tuiasi.ro                           *
+ *  Website:     https://github.com/vladbatalan/LogicallyInterpretor      *
+ *  Description: The testing unit of ProgramManager class                 *
+ *                                                                        *
+ *  This code and information is provided "as is" without warranty of     *
+ *  any kind, either expressed or implied, including but not limited      *
+ *  to the implied warranties of merchantability or fitness for a         *
+ *  particular purpose. You are free to use this source code in your      *
+ *  applications as long as the original copyright notice is included.    *
+ *                                                                        *
+ **************************************************************************/
+
+using LogicalSchemeManager;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Collections.Generic;
 
 namespace TestUnit
 {
@@ -41,6 +56,13 @@ namespace TestUnit
         /// This property makes the variable configuration more accessible
         /// </summary>
         private IVariableConfiguration AllVariables => _programManager.AllVariables;
+
+        /// <summary>
+        /// It makes the access to the internal variables easier
+        /// </summary>
+        /// <param name="name">The name of the variable that needs to be returned</param>
+        /// <returns>A variable with the specific name or null if it does not exist</returns>
+        private Variable VarByName(string name) => _programManager.AllVariables.GetVariableByName(name);
 
         #endregion Properties
 
@@ -95,7 +117,7 @@ namespace TestUnit
         }
 
         /// <summary>
-        /// This test check the following programe
+        /// This test checks the following programe
         /// Start:
         /// ReadValue(a);
         /// ReadValue(b);
@@ -153,7 +175,7 @@ namespace TestUnit
 
 
         /// <summary>
-        /// This test check the following programe
+        /// This test checks the following programe
         /// Start:
         /// sum = a / b;
         /// WriteVariable(sum);
@@ -192,7 +214,7 @@ namespace TestUnit
         }
 
         /// <summary>
-        /// This test checks if the following program:
+        /// This test checks the following program:
         /// Start:
         /// ReadVariable(a);
         /// if(a > 10)
@@ -219,7 +241,7 @@ namespace TestUnit
             // Add variables
             AllVariables.AddElement(a);
 
-            // Create write text command
+            // Create commands
             ICommand readA = new Command(new ReadVariable(a, _logger));
             ICommand decision = new Command(new Decision(new Condition(a, new RelationalOperator(">"), new ConstValue(10))));
             ICommand writeTrue = new Command(new WriteText("True", _logger));
@@ -247,7 +269,7 @@ namespace TestUnit
         }
 
         /// <summary>
-        /// This test checks if the following program:
+        /// This test checks the following program:
         /// Start:
         /// ReadVariable(n);
         /// Loop:
@@ -284,7 +306,7 @@ namespace TestUnit
             AllVariables.AddElement(new Variable("i"));
             AllVariables.AddElement(new Variable("n"));
 
-            // Create write text command
+            // Create commands
             ICommand readN = new Command(new ReadVariable(AllVariables.GetVariableByName("n"), _logger));
             ICommand loopEtc = new Command(new Eticheta("Loop"));
             ICommand decision = new Command(new Decision(
@@ -323,6 +345,212 @@ namespace TestUnit
             // Test the output
             Assert.AreEqual(expected, _logger.LoggerText);
         }
+
+        /// <summary>
+        /// This test checks if the operator is wrong, an exception is thrown.
+        /// Program:
+        /// Start:
+        /// b = 10;
+        /// c = 20;
+        /// a = b ^ c;
+        /// WriteVariable(a);
+        /// End:
+        /// </summary>
+        [TestMethod]
+        [ExpectedException(typeof(Exception))]
+        public void Wrong_simple_operator_exception()
+        {
+
+            // Add variables
+            AllVariables.AddElement(new Variable("a"));
+            AllVariables.AddElement(new Variable("b"));
+            AllVariables.AddElement(new Variable("c"));
+
+            // Create commands
+            ICommand atrib1 = new Command(
+                new Atribuire(VarByName("b"), 
+                new ConstValue(10))
+                );
+            ICommand atrib2 = new Command(
+                new Atribuire(VarByName("c"),
+                new ConstValue(20))
+                );
+
+            ICommand wrongAttrib = new Command(
+                new Atribuire(
+                    VarByName("a"),
+                    new Expression(VarByName("b"), new Operator("^"), VarByName("c"))
+                    )
+                );
+            ICommand showResult = new Command(
+                new WriteVariableValue(VarByName("a"), _logger)
+                );
+
+            // Append the new command 
+            Connections.AddElement(atrib1);
+            Connections.AddElement(atrib2);
+            Connections.AddElement(wrongAttrib);
+            Connections.AddElement(showResult);
+
+            // Create the bindings
+            Connections.BindElementFirst(StartPoint, atrib1);
+            Connections.BindElementFirst(atrib1, atrib2);
+            Connections.BindElementFirst(atrib2, wrongAttrib);
+            Connections.BindElementFirst(wrongAttrib, showResult);
+            Connections.BindElementFirst(showResult, EndPoint);
+
+            // Execute program
+            _programManager.RunProgram();
+
+        }
+
+        /// <summary>
+        /// This test checks if a relational operator is wrong, an exception is called.
+        /// Program:
+        /// Start:
+        /// b = 10;
+        /// c = 20;
+        /// if( b ? c ) {
+        /// WriteText("True");
+        /// }
+        /// else{
+        /// WriteText("False");
+        /// }
+        /// End:
+        /// </summary>
+        [TestMethod]
+        [ExpectedException(typeof(Exception))]
+        public void Wrong_relational_operator()
+        {
+
+            // Add variables
+            AllVariables.AddElement(new Variable("b"));
+            AllVariables.AddElement(new Variable("c"));
+
+            // Create commands
+            ICommand atrib1 = new Command(
+                new Atribuire(VarByName("b"),
+                new ConstValue(10))
+                );
+            ICommand atrib2 = new Command(
+                new Atribuire(VarByName("c"),
+                new ConstValue(20))
+                );
+            ICommand wrongDecision = new Command(
+                new Decision(new Condition( VarByName("b"), new RelationalOperator("?"), VarByName("c")))
+                );
+            ICommand writeTrue = new Command(
+                new WriteText("True")
+                );
+            ICommand writeFalse = new Command(
+                new WriteText("False")
+                );
+
+            // Append the new command 
+            Connections.AddElement(atrib1);
+            Connections.AddElement(atrib2);
+            Connections.AddElement(wrongDecision);
+            Connections.AddElement(writeTrue);
+            Connections.AddElement(writeFalse);
+
+            // Create the bindings
+            Connections.BindElementFirst(StartPoint, atrib1);
+            Connections.BindElementFirst(atrib1, atrib2);
+            Connections.BindElementFirst(atrib2, wrongDecision);
+            Connections.BindElementFirst(wrongDecision, writeTrue);
+            Connections.BindElementSecond(wrongDecision, writeFalse);
+            Connections.BindElementFirst(writeTrue, EndPoint);
+            Connections.BindElementFirst(writeFalse, EndPoint);
+
+            // Execute program
+            _programManager.RunProgram();
+        }
+
+        /// <summary>
+        /// This test evaluates a complicated expression.
+        /// Start:
+        /// ReadValue(a);
+        /// ReadValue(b);
+        /// c = ((a + b)/(3*a) - 25 + b) * 3.6;
+        /// WriteVariable(c);
+        /// End:
+        /// </summary>
+        [TestMethod]
+        public void Complicated_expression_execution_test()
+        {
+            // Evaluates the calculations
+            double aValue = 20;
+            double bValue = 15;
+            double expected = ((aValue + bValue) / (3 * aValue) - 25 + bValue) * 3.6;
+
+            // Get the expected Log
+            string expectedLog = "c(" + expected.ToString() + ")";
+
+            // Set the user input
+            string[] userInput = { aValue.ToString(), bValue.ToString() };
+            _logger.UserInput = userInput;
+
+            // Add variables
+            AllVariables.AddElement(new Variable("a"));
+            AllVariables.AddElement(new Variable("b"));
+            AllVariables.AddElement(new Variable("c"));
+
+            // Create the complex expression command
+            // (((a + b)/(3*a) - 25) + b) * 3.6;
+            IExpression complexExpression = new Expression(
+                new Expression(
+                    new Expression(
+                            new Expression(
+                                new Expression(
+                                    VarByName("a"),
+                                    new Operator("+"),
+                                    VarByName("b")
+                                    ),
+                                new Operator("/"),
+                                new Expression(
+                                    new ConstValue(3),
+                                    new Operator("/"),
+                                    VarByName("a")
+                                    )
+                                ),
+                            new Operator("-"),
+                            new ConstValue(25)
+                        ),
+                    new Operator("+"),
+                    VarByName("b")
+                    ),
+                new Operator("*"),
+                new ConstValue(3.6)
+                );
+
+            // Create the commands
+            ICommand readA = new Command(new ReadVariable(VarByName("a"), _logger));
+            ICommand readB = new Command(new ReadVariable(VarByName("b"), _logger));
+            ICommand atribComplex = new Command(
+                new Atribuire(VarByName("c"),
+                complexExpression)
+                );
+            ICommand writeCommand = new Command(new WriteVariableValue(VarByName("c")));
+
+            // Append the new command 
+            Connections.AddElement(readA);
+            Connections.AddElement(readB);
+            Connections.AddElement(atribComplex);
+            Connections.AddElement(writeCommand);
+
+            // Create the bindings
+            Connections.BindElementFirst(StartPoint, readA);
+            Connections.BindElementFirst(readA, readB);
+            Connections.BindElementFirst(readB, atribComplex);
+            Connections.BindElementFirst(atribComplex, writeCommand);
+            Connections.BindElementFirst(writeCommand, EndPoint);
+
+            // Execute program
+            _programManager.RunProgram();
+
+
+        }
+
         #endregion TestMethods
 
         #region TestCleanup

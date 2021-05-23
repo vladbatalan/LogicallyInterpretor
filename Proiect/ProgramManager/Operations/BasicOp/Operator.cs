@@ -77,7 +77,7 @@ namespace LogicalSchemeManager
                     }
                     return firstTerm.Execute() / second;
                 default:
-                    return 0;
+                    throw new Exception("Wrong operator! It must be one of ('+', '-', '*', '/').");
             }
         }
         #endregion Methods
