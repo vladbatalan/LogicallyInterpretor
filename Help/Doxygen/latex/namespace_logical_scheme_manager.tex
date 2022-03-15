@@ -1,0 +1,67 @@
+\hypertarget{namespace_logical_scheme_manager}{}\doxysection{Logical\+Scheme\+Manager Namespace Reference}
+\label{namespace_logical_scheme_manager}\index{LogicalSchemeManager@{LogicalSchemeManager}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_logical_scheme_manager_1_1_command_graph}{Command\+Graph}}
+\begin{DoxyCompactList}\small\item\em The class describes a graph full of different commands \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command_configuration}{ICommand\+Configuration}}
+\begin{DoxyCompactList}\small\item\em A representation of a command configurations \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_logical_scheme_manager_1_1_command}{Command}}
+\begin{DoxyCompactList}\small\item\em The class describes a basic command \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}
+\begin{DoxyCompactList}\small\item\em A representation of a command \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_logical_scheme_manager_1_1_atribuire}{Atribuire}}
+\begin{DoxyCompactList}\small\item\em The execution of the command change the value of the inner variable to the result of the expression \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_logical_scheme_manager_1_1_decision}{Decision}}
+\begin{DoxyCompactList}\small\item\em The execution of the command decides the branch on which the program will continue \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_logical_scheme_manager_1_1_eticheta}{Eticheta}}
+\begin{DoxyCompactList}\small\item\em The execution of the command sets a label \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command_type}{ICommand\+Type}}
+\begin{DoxyCompactList}\small\item\em This interface resemble the structure of a command type \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_logical_scheme_manager_1_1_read_variable}{Read\+Variable}}
+\begin{DoxyCompactList}\small\item\em The execution of the command retain atributions of the variable read \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_logical_scheme_manager_1_1_write_text}{Write\+Text}}
+\begin{DoxyCompactList}\small\item\em The execution of the command writes an text \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_logical_scheme_manager_1_1_write_variable_value}{Write\+Variable\+Value}}
+\begin{DoxyCompactList}\small\item\em The execution of the command writes the value of a variable \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_logical_scheme_manager_1_1_condition}{Condition}}
+\begin{DoxyCompactList}\small\item\em The class incapsulates a condition that can be evaluated \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_logical_scheme_manager_1_1_const_condition}{Const\+Condition}}
+\begin{DoxyCompactList}\small\item\em A class that encapsulates a constant bool value \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_condition}{ICondition}}
+\begin{DoxyCompactList}\small\item\em A representation of a condition \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_logical_scheme_manager_1_1_neg_condition}{Neg\+Condition}}
+\begin{DoxyCompactList}\small\item\em Contains a condition and the execution negates it\textquotesingle{}s result \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_logical_scheme_manager_1_1_const_value}{Const\+Value}}
+\begin{DoxyCompactList}\small\item\em This class incapsulates a value that remain constant when the program is executed \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_logical_scheme_manager_1_1_expression}{Expression}}
+\begin{DoxyCompactList}\small\item\em This class is a composite of expressions \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_expression}{IExpression}}
+\begin{DoxyCompactList}\small\item\em The interface of an object that has a value incapsulated \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_logical_scheme_manager_1_1_variable}{Variable}}
+\begin{DoxyCompactList}\small\item\em This class encapsulates a value that can be change at runtime \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observable}{IObservable}}
+\begin{DoxyCompactList}\small\item\em This object can be observer by an \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observable}{IObservable}} \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observer}{IObserver}}
+\item 
+interface \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_operator}{IOperator}}
+\begin{DoxyCompactList}\small\item\em The interface incapsulates arithmetic operators such as +, -\/, $\ast$ and / \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_logical_scheme_manager_1_1_operator}{Operator}}
+\begin{DoxyCompactList}\small\item\em The class incapsulates arithmetic operators such as +, -\/, $\ast$ and / \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_relational_operator}{IRelational\+Operator}}
+\begin{DoxyCompactList}\small\item\em The interface is incapsulating a realtional operator such as $>$=, $>$, $<$, $<$=, ==, != \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_logical_scheme_manager_1_1_relational_operator}{Relational\+Operator}}
+\begin{DoxyCompactList}\small\item\em The Class is incapsulating a realtional operator such as $>$=, $>$, $<$, $<$=, ==, != \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_logical_scheme_manager_1_1_program_manager}{Program\+Manager}}
+\begin{DoxyCompactList}\small\item\em The class that coordonates the logical scheme from command configurations to variable configuration \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_logical_scheme_manager_1_1_console_object}{Console\+Object}}
+\begin{DoxyCompactList}\small\item\em This object is the implamenetation of an \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_terminal_entity}{ITerminal\+Entity}} and is used to resemble a console \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_terminal_entity}{ITerminal\+Entity}}
+\begin{DoxyCompactList}\small\item\em This interface resembles a terminal entity. It can read or write information from and to a terminal \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_logical_scheme_manager_1_1_logger}{Logger}}
+\begin{DoxyCompactList}\small\item\em This object is the implamenetation of an \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_terminal_entity}{ITerminal\+Entity}} and is used to resemble a console \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_logical_scheme_manager_1_1_global_variables}{Global\+Variables}}
+\begin{DoxyCompactList}\small\item\em This class is responsible for the \mbox{\hyperlink{class_logical_scheme_manager_1_1_variable}{Variable}} manipulations \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_variable_configuration}{IVariable\+Configuration}}
+\begin{DoxyCompactList}\small\item\em Interface for the configuration of all the variables in the program \end{DoxyCompactList}\end{DoxyCompactItemize}

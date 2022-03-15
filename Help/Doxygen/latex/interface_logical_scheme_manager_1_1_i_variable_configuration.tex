@@ -1,0 +1,129 @@
+\hypertarget{interface_logical_scheme_manager_1_1_i_variable_configuration}{}\doxysection{Logical\+Scheme\+Manager.\+IVariable\+Configuration Interface Reference}
+\label{interface_logical_scheme_manager_1_1_i_variable_configuration}\index{LogicalSchemeManager.IVariableConfiguration@{LogicalSchemeManager.IVariableConfiguration}}
+
+
+Interface for the configuration of all the variables in the program  
+
+
+Inheritance diagram for Logical\+Scheme\+Manager.\+IVariable\+Configuration\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_logical_scheme_manager_1_1_i_variable_configuration}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_variable_configuration_ae93f8b70c6d3d521ad88eafea9de34a8}{Add\+Element}} (\mbox{\hyperlink{class_logical_scheme_manager_1_1_variable}{Variable}} variable)
+\begin{DoxyCompactList}\small\item\em This abstract method is used to add a new variable to the program \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_variable_configuration_a88676cbab454051934d1b896d9cdd2ca}{Remove\+Element}} (\mbox{\hyperlink{class_logical_scheme_manager_1_1_variable}{Variable}} variable)
+\begin{DoxyCompactList}\small\item\em This abstract method is used to remove a specific variable from the program \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_logical_scheme_manager_1_1_variable}{Variable}} \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_variable_configuration_a90c0fecb4f44ef20131ba25e87eb4c40}{Get\+Variable\+By\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em This abstract method is used to get an existing variable using it\textquotesingle{}s name \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_variable_configuration_a9027842cf9f4c3d007e7ff9aafdb8100}{Reset\+Variables}} ()
+\begin{DoxyCompactList}\small\item\em This abstract method is used to reset the values of all existng variables to 0 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_logical_scheme_manager_1_1_variable}{Variable}} $>$ \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_variable_configuration_a2b56681ef1cf1ba4001747890b88a486}{Variable\+List}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This abstract property is used to get the current list of all existing variables \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for the configuration of all the variables in the program 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_logical_scheme_manager_1_1_i_variable_configuration_ae93f8b70c6d3d521ad88eafea9de34a8}\label{interface_logical_scheme_manager_1_1_i_variable_configuration_ae93f8b70c6d3d521ad88eafea9de34a8}} 
+\index{LogicalSchemeManager.IVariableConfiguration@{LogicalSchemeManager.IVariableConfiguration}!AddElement@{AddElement}}
+\index{AddElement@{AddElement}!LogicalSchemeManager.IVariableConfiguration@{LogicalSchemeManager.IVariableConfiguration}}
+\doxysubsubsection{\texorpdfstring{AddElement()}{AddElement()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Manager.\+IVariable\+Configuration.\+Add\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_logical_scheme_manager_1_1_variable}{Variable}}}]{variable }\end{DoxyParamCaption})}
+
+
+
+This abstract method is used to add a new variable to the program 
+
+
+\begin{DoxyParams}{Parameters}
+{\em variable} & The new inserted variable\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_logical_scheme_manager_1_1_global_variables_aabddfb921ea38769432a8b15a1995c1d}{Logical\+Scheme\+Manager.\+Global\+Variables}}.
+
+\mbox{\Hypertarget{interface_logical_scheme_manager_1_1_i_variable_configuration_a90c0fecb4f44ef20131ba25e87eb4c40}\label{interface_logical_scheme_manager_1_1_i_variable_configuration_a90c0fecb4f44ef20131ba25e87eb4c40}} 
+\index{LogicalSchemeManager.IVariableConfiguration@{LogicalSchemeManager.IVariableConfiguration}!GetVariableByName@{GetVariableByName}}
+\index{GetVariableByName@{GetVariableByName}!LogicalSchemeManager.IVariableConfiguration@{LogicalSchemeManager.IVariableConfiguration}}
+\doxysubsubsection{\texorpdfstring{GetVariableByName()}{GetVariableByName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_logical_scheme_manager_1_1_variable}{Variable}} Logical\+Scheme\+Manager.\+IVariable\+Configuration.\+Get\+Variable\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+This abstract method is used to get an existing variable using it\textquotesingle{}s name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the searched variable\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A variable with the given name or null if it does not exist
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_logical_scheme_manager_1_1_global_variables_adedf0c1a55d88f1d3aa80df5af4b3fb1}{Logical\+Scheme\+Manager.\+Global\+Variables}}.
+
+\mbox{\Hypertarget{interface_logical_scheme_manager_1_1_i_variable_configuration_a88676cbab454051934d1b896d9cdd2ca}\label{interface_logical_scheme_manager_1_1_i_variable_configuration_a88676cbab454051934d1b896d9cdd2ca}} 
+\index{LogicalSchemeManager.IVariableConfiguration@{LogicalSchemeManager.IVariableConfiguration}!RemoveElement@{RemoveElement}}
+\index{RemoveElement@{RemoveElement}!LogicalSchemeManager.IVariableConfiguration@{LogicalSchemeManager.IVariableConfiguration}}
+\doxysubsubsection{\texorpdfstring{RemoveElement()}{RemoveElement()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Manager.\+IVariable\+Configuration.\+Remove\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_logical_scheme_manager_1_1_variable}{Variable}}}]{variable }\end{DoxyParamCaption})}
+
+
+
+This abstract method is used to remove a specific variable from the program 
+
+
+\begin{DoxyParams}{Parameters}
+{\em variable} & The variable that needs to be removed\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_logical_scheme_manager_1_1_global_variables_aaf4365564b78d903d0a5d2c80676cf18}{Logical\+Scheme\+Manager.\+Global\+Variables}}.
+
+\mbox{\Hypertarget{interface_logical_scheme_manager_1_1_i_variable_configuration_a9027842cf9f4c3d007e7ff9aafdb8100}\label{interface_logical_scheme_manager_1_1_i_variable_configuration_a9027842cf9f4c3d007e7ff9aafdb8100}} 
+\index{LogicalSchemeManager.IVariableConfiguration@{LogicalSchemeManager.IVariableConfiguration}!ResetVariables@{ResetVariables}}
+\index{ResetVariables@{ResetVariables}!LogicalSchemeManager.IVariableConfiguration@{LogicalSchemeManager.IVariableConfiguration}}
+\doxysubsubsection{\texorpdfstring{ResetVariables()}{ResetVariables()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Manager.\+IVariable\+Configuration.\+Reset\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This abstract method is used to reset the values of all existng variables to 0 
+
+
+
+Implemented in \mbox{\hyperlink{class_logical_scheme_manager_1_1_global_variables_a7d5b97d064453b11eb6ce433fa821f63}{Logical\+Scheme\+Manager.\+Global\+Variables}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_logical_scheme_manager_1_1_i_variable_configuration_a2b56681ef1cf1ba4001747890b88a486}\label{interface_logical_scheme_manager_1_1_i_variable_configuration_a2b56681ef1cf1ba4001747890b88a486}} 
+\index{LogicalSchemeManager.IVariableConfiguration@{LogicalSchemeManager.IVariableConfiguration}!VariableList@{VariableList}}
+\index{VariableList@{VariableList}!LogicalSchemeManager.IVariableConfiguration@{LogicalSchemeManager.IVariableConfiguration}}
+\doxysubsubsection{\texorpdfstring{VariableList}{VariableList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_logical_scheme_manager_1_1_variable}{Variable}}$>$ Logical\+Scheme\+Manager.\+IVariable\+Configuration.\+Variable\+List\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+This abstract property is used to get the current list of all existing variables 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Laboratoare/\+Anul\+\_\+\+III\+\_\+\+Sem\+\_\+\+II/\+Ingineria Proiectarii/\+Emergency/\+Logically\+Interpretor/\+Proiect/\+Program\+Manager/\+Variable\+Config/IVariable\+Configuration.\+cs\end{DoxyCompactItemize}

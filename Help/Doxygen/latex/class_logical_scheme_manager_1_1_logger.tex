@@ -1,0 +1,155 @@
+\hypertarget{class_logical_scheme_manager_1_1_logger}{}\doxysection{Logical\+Scheme\+Manager.\+Logger Class Reference}
+\label{class_logical_scheme_manager_1_1_logger}\index{LogicalSchemeManager.Logger@{LogicalSchemeManager.Logger}}
+
+
+This object is the implamenetation of an \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_terminal_entity}{ITerminal\+Entity}} and is used to resemble a console  
+
+
+Inheritance diagram for Logical\+Scheme\+Manager.\+Logger\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_logical_scheme_manager_1_1_logger}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_logical_scheme_manager_1_1_logger_aec04dffcce135aafacb443e878fef8b7}{Logger}} ()
+\begin{DoxyCompactList}\small\item\em Implicit constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_logical_scheme_manager_1_1_logger_a781111660798faef35624a8ff4195f93}{Logger}} (string\mbox{[}$\,$\mbox{]} user\+Input\+Strings)
+\begin{DoxyCompactList}\small\item\em Parameter constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logical_scheme_manager_1_1_logger_a9c920b07076acacd2ce05e041f024243}{Notify}} (string text)
+\begin{DoxyCompactList}\small\item\em Method implemented from the \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observer}{IObserver}} interface and is writting text on the terminal \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_logical_scheme_manager_1_1_logger_ac65c26a1480bb40d514b41d8ce60cc9c}{Read\+From\+Terminal}} ()
+\begin{DoxyCompactList}\small\item\em Method that returns the text introduced by the user on the terminal \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logical_scheme_manager_1_1_logger_a814c031c280bfbc465128e9c27943c77}{Write\+To\+Terminal}} (string text)
+\begin{DoxyCompactList}\small\item\em Method used to write data on the console \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_logger_ae3c85056ca2f510d3e4121830108481c}\label{class_logical_scheme_manager_1_1_logger_ae3c85056ca2f510d3e4121830108481c}} 
+void {\bfseries Clean\+Logger} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_logical_scheme_manager_1_1_logger_afd50c53ecc98c637dbdb189ba5f94404}{Logger\+Text}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property that gets the \+\_\+log\+Text \end{DoxyCompactList}\item 
+string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_logical_scheme_manager_1_1_logger_a3be2e1047f3e711d1c415dfcdeb93e52}{User\+Input}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property that mmakes user input more accessible \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This object is the implamenetation of an \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_terminal_entity}{ITerminal\+Entity}} and is used to resemble a console 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_logger_aec04dffcce135aafacb443e878fef8b7}\label{class_logical_scheme_manager_1_1_logger_aec04dffcce135aafacb443e878fef8b7}} 
+\index{LogicalSchemeManager.Logger@{LogicalSchemeManager.Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!LogicalSchemeManager.Logger@{LogicalSchemeManager.Logger}}
+\doxysubsubsection{\texorpdfstring{Logger()}{Logger()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Logical\+Scheme\+Manager.\+Logger.\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implicit constructor 
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_logger_a781111660798faef35624a8ff4195f93}\label{class_logical_scheme_manager_1_1_logger_a781111660798faef35624a8ff4195f93}} 
+\index{LogicalSchemeManager.Logger@{LogicalSchemeManager.Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!LogicalSchemeManager.Logger@{LogicalSchemeManager.Logger}}
+\doxysubsubsection{\texorpdfstring{Logger()}{Logger()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Logical\+Scheme\+Manager.\+Logger.\+Logger (\begin{DoxyParamCaption}\item[{string\mbox{[}$\,$\mbox{]}}]{user\+Input\+Strings }\end{DoxyParamCaption})}
+
+
+
+Parameter constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Input\+Strings} & A list of strings given as input from the user\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_logger_a9c920b07076acacd2ce05e041f024243}\label{class_logical_scheme_manager_1_1_logger_a9c920b07076acacd2ce05e041f024243}} 
+\index{LogicalSchemeManager.Logger@{LogicalSchemeManager.Logger}!Notify@{Notify}}
+\index{Notify@{Notify}!LogicalSchemeManager.Logger@{LogicalSchemeManager.Logger}}
+\doxysubsubsection{\texorpdfstring{Notify()}{Notify()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Manager.\+Logger.\+Notify (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})}
+
+
+
+Method implemented from the \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observer}{IObserver}} interface and is writting text on the terminal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Text to be written on the terminal\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observer_a7802551678b1c1081496058337ec63e4}{Logical\+Scheme\+Manager.\+IObserver}}.
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_logger_ac65c26a1480bb40d514b41d8ce60cc9c}\label{class_logical_scheme_manager_1_1_logger_ac65c26a1480bb40d514b41d8ce60cc9c}} 
+\index{LogicalSchemeManager.Logger@{LogicalSchemeManager.Logger}!ReadFromTerminal@{ReadFromTerminal}}
+\index{ReadFromTerminal@{ReadFromTerminal}!LogicalSchemeManager.Logger@{LogicalSchemeManager.Logger}}
+\doxysubsubsection{\texorpdfstring{ReadFromTerminal()}{ReadFromTerminal()}}
+{\footnotesize\ttfamily string Logical\+Scheme\+Manager.\+Logger.\+Read\+From\+Terminal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method that returns the text introduced by the user on the terminal 
+
+\begin{DoxyReturn}{Returns}
+The input from the user
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_terminal_entity_a8e10f981898eafb9a66c381c43c766f3}{Logical\+Scheme\+Manager.\+ITerminal\+Entity}}.
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_logger_a814c031c280bfbc465128e9c27943c77}\label{class_logical_scheme_manager_1_1_logger_a814c031c280bfbc465128e9c27943c77}} 
+\index{LogicalSchemeManager.Logger@{LogicalSchemeManager.Logger}!WriteToTerminal@{WriteToTerminal}}
+\index{WriteToTerminal@{WriteToTerminal}!LogicalSchemeManager.Logger@{LogicalSchemeManager.Logger}}
+\doxysubsubsection{\texorpdfstring{WriteToTerminal()}{WriteToTerminal()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Manager.\+Logger.\+Write\+To\+Terminal (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})}
+
+
+
+Method used to write data on the console 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The string to be written to the console\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_terminal_entity_abffab07227fc0c1afb2fb2b1f344c23c}{Logical\+Scheme\+Manager.\+ITerminal\+Entity}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_logger_afd50c53ecc98c637dbdb189ba5f94404}\label{class_logical_scheme_manager_1_1_logger_afd50c53ecc98c637dbdb189ba5f94404}} 
+\index{LogicalSchemeManager.Logger@{LogicalSchemeManager.Logger}!LoggerText@{LoggerText}}
+\index{LoggerText@{LoggerText}!LogicalSchemeManager.Logger@{LogicalSchemeManager.Logger}}
+\doxysubsubsection{\texorpdfstring{LoggerText}{LoggerText}}
+{\footnotesize\ttfamily string Logical\+Scheme\+Manager.\+Logger.\+Logger\+Text\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Property that gets the \+\_\+log\+Text 
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_logger_a3be2e1047f3e711d1c415dfcdeb93e52}\label{class_logical_scheme_manager_1_1_logger_a3be2e1047f3e711d1c415dfcdeb93e52}} 
+\index{LogicalSchemeManager.Logger@{LogicalSchemeManager.Logger}!UserInput@{UserInput}}
+\index{UserInput@{UserInput}!LogicalSchemeManager.Logger@{LogicalSchemeManager.Logger}}
+\doxysubsubsection{\texorpdfstring{UserInput}{UserInput}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Logical\+Scheme\+Manager.\+Logger.\+User\+Input\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property that mmakes user input more accessible 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Laboratoare/\+Anul\+\_\+\+III\+\_\+\+Sem\+\_\+\+II/\+Ingineria Proiectarii/\+Emergency/\+Logically\+Interpretor/\+Proiect/\+Program\+Manager/\+Terminal/Logger.\+cs\end{DoxyCompactItemize}

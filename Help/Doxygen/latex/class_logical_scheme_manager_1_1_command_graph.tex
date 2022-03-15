@@ -1,0 +1,200 @@
+\hypertarget{class_logical_scheme_manager_1_1_command_graph}{}\doxysection{Logical\+Scheme\+Manager.\+Command\+Graph Class Reference}
+\label{class_logical_scheme_manager_1_1_command_graph}\index{LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}}
+
+
+The class describes a graph full of different commands  
+
+
+Inheritance diagram for Logical\+Scheme\+Manager.\+Command\+Graph\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_logical_scheme_manager_1_1_command_graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_logical_scheme_manager_1_1_command_graph_a648de90219e51fb7854ad55271129f28}{Command\+Graph}} ()
+\begin{DoxyCompactList}\small\item\em The implicit constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_logical_scheme_manager_1_1_command_graph_a7894f39dc2550f34fbbd5023a2fd1785}{Command\+Graph}} (\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} start, \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} end)
+\begin{DoxyCompactList}\small\item\em The parameter constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logical_scheme_manager_1_1_command_graph_acb95a37d7c118b92474014f7e908c937}{Add\+Element}} (\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} command)
+\begin{DoxyCompactList}\small\item\em The method that adds an element \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logical_scheme_manager_1_1_command_graph_ac2b198afeca704a8f8249a5af9e416cc}{Bind\+Element\+First}} (\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} father, \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} first\+Son)
+\begin{DoxyCompactList}\small\item\em The method that bind the first element \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logical_scheme_manager_1_1_command_graph_ad32a74a4a07e3387c812dd126ca2ff08}{Bind\+Element\+Second}} (\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} father, \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} second\+Son)
+\begin{DoxyCompactList}\small\item\em The method that bind the second element \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logical_scheme_manager_1_1_command_graph_a797484d674ee06573397ed3006b97b71}{Remove\+Element}} (\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} command)
+\begin{DoxyCompactList}\small\item\em The method that removes an output \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} \mbox{\hyperlink{class_logical_scheme_manager_1_1_command_graph_a440183918f77830386108b0f23e2bbc8}{Get\+Next\+Element}} (\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} key, bool is\+Next\+True)
+\begin{DoxyCompactList}\small\item\em The abstract method returns the branch towards the next command \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}, \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}\mbox{[}$\,$\mbox{]}$>$ \mbox{\hyperlink{class_logical_scheme_manager_1_1_command_graph_a97988fca7915d8e9ccd33bf87f826101}{Graph}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The property that exposes the dictionary \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} $>$ \mbox{\hyperlink{class_logical_scheme_manager_1_1_command_graph_a6e58097fbb0b8f54ff7f2082ea8d9479}{Command\+List}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The property that exposes the list of commands \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} \mbox{\hyperlink{class_logical_scheme_manager_1_1_command_graph_a9eccf5f9841d249b4a439f7db47f20b1}{Start\+Point}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The property that exposes the starting point \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} \mbox{\hyperlink{class_logical_scheme_manager_1_1_command_graph_a65f1b5f82c1af33f373e6f20930d83b8}{End\+Point}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The property that exposes the ending point \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class describes a graph full of different commands 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_command_graph_a648de90219e51fb7854ad55271129f28}\label{class_logical_scheme_manager_1_1_command_graph_a648de90219e51fb7854ad55271129f28}} 
+\index{LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}!CommandGraph@{CommandGraph}}
+\index{CommandGraph@{CommandGraph}!LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}}
+\doxysubsubsection{\texorpdfstring{CommandGraph()}{CommandGraph()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Logical\+Scheme\+Manager.\+Command\+Graph.\+Command\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The implicit constructor 
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_command_graph_a7894f39dc2550f34fbbd5023a2fd1785}\label{class_logical_scheme_manager_1_1_command_graph_a7894f39dc2550f34fbbd5023a2fd1785}} 
+\index{LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}!CommandGraph@{CommandGraph}}
+\index{CommandGraph@{CommandGraph}!LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}}
+\doxysubsubsection{\texorpdfstring{CommandGraph()}{CommandGraph()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Logical\+Scheme\+Manager.\+Command\+Graph.\+Command\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}}]{start,  }\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}}]{end }\end{DoxyParamCaption})}
+
+
+
+The parameter constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & The starting point\\
+\hline
+{\em end} & The ending point\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_command_graph_acb95a37d7c118b92474014f7e908c937}\label{class_logical_scheme_manager_1_1_command_graph_acb95a37d7c118b92474014f7e908c937}} 
+\index{LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}!AddElement@{AddElement}}
+\index{AddElement@{AddElement}!LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}}
+\doxysubsubsection{\texorpdfstring{AddElement()}{AddElement()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Manager.\+Command\+Graph.\+Add\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}}]{command }\end{DoxyParamCaption})}
+
+
+
+The method that adds an element 
+
+
+
+Implements \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command_configuration_aca4f4f38e2054781efed33c16df86695}{Logical\+Scheme\+Manager.\+ICommand\+Configuration}}.
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_command_graph_ac2b198afeca704a8f8249a5af9e416cc}\label{class_logical_scheme_manager_1_1_command_graph_ac2b198afeca704a8f8249a5af9e416cc}} 
+\index{LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}!BindElementFirst@{BindElementFirst}}
+\index{BindElementFirst@{BindElementFirst}!LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}}
+\doxysubsubsection{\texorpdfstring{BindElementFirst()}{BindElementFirst()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Manager.\+Command\+Graph.\+Bind\+Element\+First (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}}]{father,  }\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}}]{first\+Son }\end{DoxyParamCaption})}
+
+
+
+The method that bind the first element 
+
+
+
+Implements \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command_configuration_a31e0038d3025495e8c3c7bf59198bfdc}{Logical\+Scheme\+Manager.\+ICommand\+Configuration}}.
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_command_graph_ad32a74a4a07e3387c812dd126ca2ff08}\label{class_logical_scheme_manager_1_1_command_graph_ad32a74a4a07e3387c812dd126ca2ff08}} 
+\index{LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}!BindElementSecond@{BindElementSecond}}
+\index{BindElementSecond@{BindElementSecond}!LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}}
+\doxysubsubsection{\texorpdfstring{BindElementSecond()}{BindElementSecond()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Manager.\+Command\+Graph.\+Bind\+Element\+Second (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}}]{father,  }\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}}]{second\+Son }\end{DoxyParamCaption})}
+
+
+
+The method that bind the second element 
+
+
+
+Implements \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command_configuration_aad845e64785c9ee768b7c03684fdc4b1}{Logical\+Scheme\+Manager.\+ICommand\+Configuration}}.
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_command_graph_a440183918f77830386108b0f23e2bbc8}\label{class_logical_scheme_manager_1_1_command_graph_a440183918f77830386108b0f23e2bbc8}} 
+\index{LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}!GetNextElement@{GetNextElement}}
+\index{GetNextElement@{GetNextElement}!LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}}
+\doxysubsubsection{\texorpdfstring{GetNextElement()}{GetNextElement()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} Logical\+Scheme\+Manager.\+Command\+Graph.\+Get\+Next\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}}]{key,  }\item[{bool}]{is\+Next\+True }\end{DoxyParamCaption})}
+
+
+
+The abstract method returns the branch towards the next command 
+
+\begin{DoxyReturn}{Returns}
+A command that describes the branch taken to the next element to be executed
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command_configuration_aa6eecb085ba10c4584f445bc9346d9d5}{Logical\+Scheme\+Manager.\+ICommand\+Configuration}}.
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_command_graph_a797484d674ee06573397ed3006b97b71}\label{class_logical_scheme_manager_1_1_command_graph_a797484d674ee06573397ed3006b97b71}} 
+\index{LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}!RemoveElement@{RemoveElement}}
+\index{RemoveElement@{RemoveElement}!LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}}
+\doxysubsubsection{\texorpdfstring{RemoveElement()}{RemoveElement()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Manager.\+Command\+Graph.\+Remove\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}}]{command }\end{DoxyParamCaption})}
+
+
+
+The method that removes an output 
+
+
+
+Implements \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command_configuration_acb8881d5105fdf784911541c4603b8d5}{Logical\+Scheme\+Manager.\+ICommand\+Configuration}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_command_graph_a6e58097fbb0b8f54ff7f2082ea8d9479}\label{class_logical_scheme_manager_1_1_command_graph_a6e58097fbb0b8f54ff7f2082ea8d9479}} 
+\index{LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}!CommandList@{CommandList}}
+\index{CommandList@{CommandList}!LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}}
+\doxysubsubsection{\texorpdfstring{CommandList}{CommandList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}$>$ Logical\+Scheme\+Manager.\+Command\+Graph.\+Command\+List\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The property that exposes the list of commands 
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_command_graph_a65f1b5f82c1af33f373e6f20930d83b8}\label{class_logical_scheme_manager_1_1_command_graph_a65f1b5f82c1af33f373e6f20930d83b8}} 
+\index{LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}!EndPoint@{EndPoint}}
+\index{EndPoint@{EndPoint}!LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}}
+\doxysubsubsection{\texorpdfstring{EndPoint}{EndPoint}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} Logical\+Scheme\+Manager.\+Command\+Graph.\+End\+Point\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The property that exposes the ending point 
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_command_graph_a97988fca7915d8e9ccd33bf87f826101}\label{class_logical_scheme_manager_1_1_command_graph_a97988fca7915d8e9ccd33bf87f826101}} 
+\index{LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}!Graph@{Graph}}
+\index{Graph@{Graph}!LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}}
+\doxysubsubsection{\texorpdfstring{Graph}{Graph}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}, \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}\mbox{[}$\,$\mbox{]}$>$ Logical\+Scheme\+Manager.\+Command\+Graph.\+Graph\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The property that exposes the dictionary 
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_command_graph_a9eccf5f9841d249b4a439f7db47f20b1}\label{class_logical_scheme_manager_1_1_command_graph_a9eccf5f9841d249b4a439f7db47f20b1}} 
+\index{LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}!StartPoint@{StartPoint}}
+\index{StartPoint@{StartPoint}!LogicalSchemeManager.CommandGraph@{LogicalSchemeManager.CommandGraph}}
+\doxysubsubsection{\texorpdfstring{StartPoint}{StartPoint}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} Logical\+Scheme\+Manager.\+Command\+Graph.\+Start\+Point\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The property that exposes the starting point 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Laboratoare/\+Anul\+\_\+\+III\+\_\+\+Sem\+\_\+\+II/\+Ingineria Proiectarii/\+Emergency/\+Logically\+Interpretor/\+Proiect/\+Program\+Manager/\+Command\+Config/Command\+Graph.\+cs\end{DoxyCompactItemize}

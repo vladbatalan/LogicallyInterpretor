@@ -1,0 +1,129 @@
+\hypertarget{class_logical_scheme_manager_1_1_condition}{}\doxysection{Logical\+Scheme\+Manager.\+Condition Class Reference}
+\label{class_logical_scheme_manager_1_1_condition}\index{LogicalSchemeManager.Condition@{LogicalSchemeManager.Condition}}
+
+
+The class incapsulates a condition that can be evaluated  
+
+
+Inheritance diagram for Logical\+Scheme\+Manager.\+Condition\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_logical_scheme_manager_1_1_condition}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_logical_scheme_manager_1_1_condition_aa136d1bdda218ba3aa83325eb403c89f}{Condition}} (\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_expression}{IExpression}} first\+Expression, \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_relational_operator}{IRelational\+Operator}} rel\+Operator, \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_expression}{IExpression}} second\+Expression)
+\begin{DoxyCompactList}\small\item\em The parameter constructor \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_logical_scheme_manager_1_1_condition_ad080f62afcf9a9cd1aa364116b85821d}{Execute\+Condition}} ()
+\begin{DoxyCompactList}\small\item\em The execution of the method returns the boolean result of the condition \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_logical_scheme_manager_1_1_condition_a953017856a99883a4a07b2e27ed56ae5}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em The override method returns a string that describes the elements of the condition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_expression}{IExpression}} \mbox{\hyperlink{class_logical_scheme_manager_1_1_condition_a1445fe96f20745ec97ddbedcca933cf4}{First\+Expression}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The property exposes the left term of the condition \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_expression}{IExpression}} \mbox{\hyperlink{class_logical_scheme_manager_1_1_condition_a7b5cf22fd1d55db37330bf6549488be2}{Second\+Expression}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The property exposes the right term of the condition \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_relational_operator}{IRelational\+Operator}} \mbox{\hyperlink{class_logical_scheme_manager_1_1_condition_a35524d00dac55b8744c1f3ad83d71db5}{Relational\+Operator}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The property exposes the \mbox{\hyperlink{class_logical_scheme_manager_1_1_relational_operator}{Relational\+Operator}} of the condition \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class incapsulates a condition that can be evaluated 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_condition_aa136d1bdda218ba3aa83325eb403c89f}\label{class_logical_scheme_manager_1_1_condition_aa136d1bdda218ba3aa83325eb403c89f}} 
+\index{LogicalSchemeManager.Condition@{LogicalSchemeManager.Condition}!Condition@{Condition}}
+\index{Condition@{Condition}!LogicalSchemeManager.Condition@{LogicalSchemeManager.Condition}}
+\doxysubsubsection{\texorpdfstring{Condition()}{Condition()}}
+{\footnotesize\ttfamily Logical\+Scheme\+Manager.\+Condition.\+Condition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_expression}{IExpression}}}]{first\+Expression,  }\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_relational_operator}{IRelational\+Operator}}}]{rel\+Operator,  }\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_expression}{IExpression}}}]{second\+Expression }\end{DoxyParamCaption})}
+
+
+
+The parameter constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\+Expression} & The left term of the condition\\
+\hline
+{\em rel\+Operator} & The relational operator of the condition\\
+\hline
+{\em second\+Expression} & The right term of the condition\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_condition_ad080f62afcf9a9cd1aa364116b85821d}\label{class_logical_scheme_manager_1_1_condition_ad080f62afcf9a9cd1aa364116b85821d}} 
+\index{LogicalSchemeManager.Condition@{LogicalSchemeManager.Condition}!ExecuteCondition@{ExecuteCondition}}
+\index{ExecuteCondition@{ExecuteCondition}!LogicalSchemeManager.Condition@{LogicalSchemeManager.Condition}}
+\doxysubsubsection{\texorpdfstring{ExecuteCondition()}{ExecuteCondition()}}
+{\footnotesize\ttfamily bool Logical\+Scheme\+Manager.\+Condition.\+Execute\+Condition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The execution of the method returns the boolean result of the condition 
+
+\begin{DoxyReturn}{Returns}
+The boolean result of the condition
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_condition_a41ea3604cbcad130bacfec541e8936af}{Logical\+Scheme\+Manager.\+ICondition}}.
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_condition_a953017856a99883a4a07b2e27ed56ae5}\label{class_logical_scheme_manager_1_1_condition_a953017856a99883a4a07b2e27ed56ae5}} 
+\index{LogicalSchemeManager.Condition@{LogicalSchemeManager.Condition}!ToString@{ToString}}
+\index{ToString@{ToString}!LogicalSchemeManager.Condition@{LogicalSchemeManager.Condition}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Logical\+Scheme\+Manager.\+Condition.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The override method returns a string that describes the elements of the condition 
+
+\begin{DoxyReturn}{Returns}
+String that descrribes the content of the class
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_condition_a1445fe96f20745ec97ddbedcca933cf4}\label{class_logical_scheme_manager_1_1_condition_a1445fe96f20745ec97ddbedcca933cf4}} 
+\index{LogicalSchemeManager.Condition@{LogicalSchemeManager.Condition}!FirstExpression@{FirstExpression}}
+\index{FirstExpression@{FirstExpression}!LogicalSchemeManager.Condition@{LogicalSchemeManager.Condition}}
+\doxysubsubsection{\texorpdfstring{FirstExpression}{FirstExpression}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_expression}{IExpression}} Logical\+Scheme\+Manager.\+Condition.\+First\+Expression\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The property exposes the left term of the condition 
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_condition_a35524d00dac55b8744c1f3ad83d71db5}\label{class_logical_scheme_manager_1_1_condition_a35524d00dac55b8744c1f3ad83d71db5}} 
+\index{LogicalSchemeManager.Condition@{LogicalSchemeManager.Condition}!RelationalOperator@{RelationalOperator}}
+\index{RelationalOperator@{RelationalOperator}!LogicalSchemeManager.Condition@{LogicalSchemeManager.Condition}}
+\doxysubsubsection{\texorpdfstring{RelationalOperator}{RelationalOperator}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_relational_operator}{IRelational\+Operator}} Logical\+Scheme\+Manager.\+Condition.\+Relational\+Operator\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The property exposes the \mbox{\hyperlink{class_logical_scheme_manager_1_1_relational_operator}{Relational\+Operator}} of the condition 
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_condition_a7b5cf22fd1d55db37330bf6549488be2}\label{class_logical_scheme_manager_1_1_condition_a7b5cf22fd1d55db37330bf6549488be2}} 
+\index{LogicalSchemeManager.Condition@{LogicalSchemeManager.Condition}!SecondExpression@{SecondExpression}}
+\index{SecondExpression@{SecondExpression}!LogicalSchemeManager.Condition@{LogicalSchemeManager.Condition}}
+\doxysubsubsection{\texorpdfstring{SecondExpression}{SecondExpression}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_expression}{IExpression}} Logical\+Scheme\+Manager.\+Condition.\+Second\+Expression\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The property exposes the right term of the condition 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Laboratoare/\+Anul\+\_\+\+III\+\_\+\+Sem\+\_\+\+II/\+Ingineria Proiectarii/\+Emergency/\+Logically\+Interpretor/\+Proiect/\+Program\+Manager/\+Condition/Condition.\+cs\end{DoxyCompactItemize}

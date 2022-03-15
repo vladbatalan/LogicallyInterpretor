@@ -1,0 +1,117 @@
+\hypertarget{class_logical_scheme_manager_1_1_expression}{}\doxysection{Logical\+Scheme\+Manager.\+Expression Class Reference}
+\label{class_logical_scheme_manager_1_1_expression}\index{LogicalSchemeManager.Expression@{LogicalSchemeManager.Expression}}
+
+
+This class is a composite of expressions  
+
+
+Inheritance diagram for Logical\+Scheme\+Manager.\+Expression\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_logical_scheme_manager_1_1_expression}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_logical_scheme_manager_1_1_expression_af39e09e3e8d6d2d1999e3017d02148ec}{Expression}} (\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_expression}{IExpression}} first\+Term, \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_operator}{IOperator}} operator\+\_\+, \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_expression}{IExpression}} second\+Term)
+\begin{DoxyCompactList}\small\item\em The parameter constructor \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_logical_scheme_manager_1_1_expression_a79278f78b3ccfce2c1d1825a07a217fa}{Execute}} ()
+\begin{DoxyCompactList}\small\item\em This method executes the operation inside the expression \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_logical_scheme_manager_1_1_expression_a099b4072cff55c4d03b9fe324cffdc74}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Override Method to show the representative elements of the expression \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_expression}{IExpression}} \mbox{\hyperlink{class_logical_scheme_manager_1_1_expression_a5c5e0b9e19e2547b7cdfac2201c4eaac}{First\+Term}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property that exposes the first expression \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_expression}{IExpression}} \mbox{\hyperlink{class_logical_scheme_manager_1_1_expression_ab0ba71fe6d01777d0d246ee0188d44c8}{Second\+Term}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property that exposes the second expression \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is a composite of expressions 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_expression_af39e09e3e8d6d2d1999e3017d02148ec}\label{class_logical_scheme_manager_1_1_expression_af39e09e3e8d6d2d1999e3017d02148ec}} 
+\index{LogicalSchemeManager.Expression@{LogicalSchemeManager.Expression}!Expression@{Expression}}
+\index{Expression@{Expression}!LogicalSchemeManager.Expression@{LogicalSchemeManager.Expression}}
+\doxysubsubsection{\texorpdfstring{Expression()}{Expression()}}
+{\footnotesize\ttfamily Logical\+Scheme\+Manager.\+Expression.\+Expression (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_expression}{IExpression}}}]{first\+Term,  }\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_operator}{IOperator}}}]{operator\+\_\+,  }\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_expression}{IExpression}}}]{second\+Term }\end{DoxyParamCaption})}
+
+
+
+The parameter constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\+Term} & The first expression\\
+\hline
+{\em operator\+\_\+} & The operator\\
+\hline
+{\em second\+Term} & The second expression\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_expression_a79278f78b3ccfce2c1d1825a07a217fa}\label{class_logical_scheme_manager_1_1_expression_a79278f78b3ccfce2c1d1825a07a217fa}} 
+\index{LogicalSchemeManager.Expression@{LogicalSchemeManager.Expression}!Execute@{Execute}}
+\index{Execute@{Execute}!LogicalSchemeManager.Expression@{LogicalSchemeManager.Expression}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily double Logical\+Scheme\+Manager.\+Expression.\+Execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method executes the operation inside the expression 
+
+\begin{DoxyReturn}{Returns}
+The result of the operation
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_expression_a6de93a0f49c954479e6c324ad35f53da}{Logical\+Scheme\+Manager.\+IExpression}}.
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_expression_a099b4072cff55c4d03b9fe324cffdc74}\label{class_logical_scheme_manager_1_1_expression_a099b4072cff55c4d03b9fe324cffdc74}} 
+\index{LogicalSchemeManager.Expression@{LogicalSchemeManager.Expression}!ToString@{ToString}}
+\index{ToString@{ToString}!LogicalSchemeManager.Expression@{LogicalSchemeManager.Expression}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Logical\+Scheme\+Manager.\+Expression.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Override Method to show the representative elements of the expression 
+
+\begin{DoxyReturn}{Returns}
+A string that contains the represetative elements of the expression
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_expression_a5c5e0b9e19e2547b7cdfac2201c4eaac}\label{class_logical_scheme_manager_1_1_expression_a5c5e0b9e19e2547b7cdfac2201c4eaac}} 
+\index{LogicalSchemeManager.Expression@{LogicalSchemeManager.Expression}!FirstTerm@{FirstTerm}}
+\index{FirstTerm@{FirstTerm}!LogicalSchemeManager.Expression@{LogicalSchemeManager.Expression}}
+\doxysubsubsection{\texorpdfstring{FirstTerm}{FirstTerm}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_expression}{IExpression}} Logical\+Scheme\+Manager.\+Expression.\+First\+Term\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property that exposes the first expression 
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_expression_ab0ba71fe6d01777d0d246ee0188d44c8}\label{class_logical_scheme_manager_1_1_expression_ab0ba71fe6d01777d0d246ee0188d44c8}} 
+\index{LogicalSchemeManager.Expression@{LogicalSchemeManager.Expression}!SecondTerm@{SecondTerm}}
+\index{SecondTerm@{SecondTerm}!LogicalSchemeManager.Expression@{LogicalSchemeManager.Expression}}
+\doxysubsubsection{\texorpdfstring{SecondTerm}{SecondTerm}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_expression}{IExpression}} Logical\+Scheme\+Manager.\+Expression.\+Second\+Term\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property that exposes the second expression 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Laboratoare/\+Anul\+\_\+\+III\+\_\+\+Sem\+\_\+\+II/\+Ingineria Proiectarii/\+Emergency/\+Logically\+Interpretor/\+Proiect/\+Program\+Manager/\+Expression/Expression.\+cs\end{DoxyCompactItemize}

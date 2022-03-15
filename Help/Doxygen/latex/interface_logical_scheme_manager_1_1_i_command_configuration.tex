@@ -1,0 +1,166 @@
+\hypertarget{interface_logical_scheme_manager_1_1_i_command_configuration}{}\doxysection{Logical\+Scheme\+Manager.\+ICommand\+Configuration Interface Reference}
+\label{interface_logical_scheme_manager_1_1_i_command_configuration}\index{LogicalSchemeManager.ICommandConfiguration@{LogicalSchemeManager.ICommandConfiguration}}
+
+
+A representation of a command configurations  
+
+
+Inheritance diagram for Logical\+Scheme\+Manager.\+ICommand\+Configuration\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_logical_scheme_manager_1_1_i_command_configuration}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command_configuration_aca4f4f38e2054781efed33c16df86695}{Add\+Element}} (\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} command)
+\begin{DoxyCompactList}\small\item\em The method that adds an element \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command_configuration_acb8881d5105fdf784911541c4603b8d5}{Remove\+Element}} (\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} command)
+\begin{DoxyCompactList}\small\item\em The method that removes an output \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command_configuration_a31e0038d3025495e8c3c7bf59198bfdc}{Bind\+Element\+First}} (\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} father, \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} first\+Son)
+\begin{DoxyCompactList}\small\item\em The method that bind the first element \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command_configuration_aad845e64785c9ee768b7c03684fdc4b1}{Bind\+Element\+Second}} (\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} father, \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} second\+Son)
+\begin{DoxyCompactList}\small\item\em The method that bind the second element \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command_configuration_aa6eecb085ba10c4584f445bc9346d9d5}{Get\+Next\+Element}} (\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} key, bool is\+Next\+True)
+\begin{DoxyCompactList}\small\item\em The abstract method returns the branch towards the next command \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}, \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}\mbox{[}$\,$\mbox{]}$>$ \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command_configuration_ade16d9fd83cad63dc62743600b54f540}{Graph}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The abstract property exposes a dictionary \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} $>$ \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command_configuration_a4e93670ff060b48b44a937512ce72f6f}{Command\+List}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The abstract property exposes a list of commands \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command_configuration_a1e544ef9cac0982552aa8b6f1b0d36bc}{Start\+Point}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The abstract property exposes the starting point of the command \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command_configuration_ab4999110db6a2b70877b1f2e88bd6d58}{End\+Point}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The abstract property exposes the ending point of the command \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A representation of a command configurations 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_logical_scheme_manager_1_1_i_command_configuration_aca4f4f38e2054781efed33c16df86695}\label{interface_logical_scheme_manager_1_1_i_command_configuration_aca4f4f38e2054781efed33c16df86695}} 
+\index{LogicalSchemeManager.ICommandConfiguration@{LogicalSchemeManager.ICommandConfiguration}!AddElement@{AddElement}}
+\index{AddElement@{AddElement}!LogicalSchemeManager.ICommandConfiguration@{LogicalSchemeManager.ICommandConfiguration}}
+\doxysubsubsection{\texorpdfstring{AddElement()}{AddElement()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Manager.\+ICommand\+Configuration.\+Add\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}}]{command }\end{DoxyParamCaption})}
+
+
+
+The method that adds an element 
+
+
+
+Implemented in \mbox{\hyperlink{class_logical_scheme_manager_1_1_command_graph_acb95a37d7c118b92474014f7e908c937}{Logical\+Scheme\+Manager.\+Command\+Graph}}.
+
+\mbox{\Hypertarget{interface_logical_scheme_manager_1_1_i_command_configuration_a31e0038d3025495e8c3c7bf59198bfdc}\label{interface_logical_scheme_manager_1_1_i_command_configuration_a31e0038d3025495e8c3c7bf59198bfdc}} 
+\index{LogicalSchemeManager.ICommandConfiguration@{LogicalSchemeManager.ICommandConfiguration}!BindElementFirst@{BindElementFirst}}
+\index{BindElementFirst@{BindElementFirst}!LogicalSchemeManager.ICommandConfiguration@{LogicalSchemeManager.ICommandConfiguration}}
+\doxysubsubsection{\texorpdfstring{BindElementFirst()}{BindElementFirst()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Manager.\+ICommand\+Configuration.\+Bind\+Element\+First (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}}]{father,  }\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}}]{first\+Son }\end{DoxyParamCaption})}
+
+
+
+The method that bind the first element 
+
+
+
+Implemented in \mbox{\hyperlink{class_logical_scheme_manager_1_1_command_graph_ac2b198afeca704a8f8249a5af9e416cc}{Logical\+Scheme\+Manager.\+Command\+Graph}}.
+
+\mbox{\Hypertarget{interface_logical_scheme_manager_1_1_i_command_configuration_aad845e64785c9ee768b7c03684fdc4b1}\label{interface_logical_scheme_manager_1_1_i_command_configuration_aad845e64785c9ee768b7c03684fdc4b1}} 
+\index{LogicalSchemeManager.ICommandConfiguration@{LogicalSchemeManager.ICommandConfiguration}!BindElementSecond@{BindElementSecond}}
+\index{BindElementSecond@{BindElementSecond}!LogicalSchemeManager.ICommandConfiguration@{LogicalSchemeManager.ICommandConfiguration}}
+\doxysubsubsection{\texorpdfstring{BindElementSecond()}{BindElementSecond()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Manager.\+ICommand\+Configuration.\+Bind\+Element\+Second (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}}]{father,  }\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}}]{second\+Son }\end{DoxyParamCaption})}
+
+
+
+The method that bind the second element 
+
+
+
+Implemented in \mbox{\hyperlink{class_logical_scheme_manager_1_1_command_graph_ad32a74a4a07e3387c812dd126ca2ff08}{Logical\+Scheme\+Manager.\+Command\+Graph}}.
+
+\mbox{\Hypertarget{interface_logical_scheme_manager_1_1_i_command_configuration_aa6eecb085ba10c4584f445bc9346d9d5}\label{interface_logical_scheme_manager_1_1_i_command_configuration_aa6eecb085ba10c4584f445bc9346d9d5}} 
+\index{LogicalSchemeManager.ICommandConfiguration@{LogicalSchemeManager.ICommandConfiguration}!GetNextElement@{GetNextElement}}
+\index{GetNextElement@{GetNextElement}!LogicalSchemeManager.ICommandConfiguration@{LogicalSchemeManager.ICommandConfiguration}}
+\doxysubsubsection{\texorpdfstring{GetNextElement()}{GetNextElement()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} Logical\+Scheme\+Manager.\+ICommand\+Configuration.\+Get\+Next\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}}]{key,  }\item[{bool}]{is\+Next\+True }\end{DoxyParamCaption})}
+
+
+
+The abstract method returns the branch towards the next command 
+
+\begin{DoxyReturn}{Returns}
+A command that describes the branch taken to the next element to be executed
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_logical_scheme_manager_1_1_command_graph_a440183918f77830386108b0f23e2bbc8}{Logical\+Scheme\+Manager.\+Command\+Graph}}.
+
+\mbox{\Hypertarget{interface_logical_scheme_manager_1_1_i_command_configuration_acb8881d5105fdf784911541c4603b8d5}\label{interface_logical_scheme_manager_1_1_i_command_configuration_acb8881d5105fdf784911541c4603b8d5}} 
+\index{LogicalSchemeManager.ICommandConfiguration@{LogicalSchemeManager.ICommandConfiguration}!RemoveElement@{RemoveElement}}
+\index{RemoveElement@{RemoveElement}!LogicalSchemeManager.ICommandConfiguration@{LogicalSchemeManager.ICommandConfiguration}}
+\doxysubsubsection{\texorpdfstring{RemoveElement()}{RemoveElement()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Manager.\+ICommand\+Configuration.\+Remove\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}}]{command }\end{DoxyParamCaption})}
+
+
+
+The method that removes an output 
+
+
+
+Implemented in \mbox{\hyperlink{class_logical_scheme_manager_1_1_command_graph_a797484d674ee06573397ed3006b97b71}{Logical\+Scheme\+Manager.\+Command\+Graph}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_logical_scheme_manager_1_1_i_command_configuration_a4e93670ff060b48b44a937512ce72f6f}\label{interface_logical_scheme_manager_1_1_i_command_configuration_a4e93670ff060b48b44a937512ce72f6f}} 
+\index{LogicalSchemeManager.ICommandConfiguration@{LogicalSchemeManager.ICommandConfiguration}!CommandList@{CommandList}}
+\index{CommandList@{CommandList}!LogicalSchemeManager.ICommandConfiguration@{LogicalSchemeManager.ICommandConfiguration}}
+\doxysubsubsection{\texorpdfstring{CommandList}{CommandList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}$>$ Logical\+Scheme\+Manager.\+ICommand\+Configuration.\+Command\+List\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The abstract property exposes a list of commands 
+
+\mbox{\Hypertarget{interface_logical_scheme_manager_1_1_i_command_configuration_ab4999110db6a2b70877b1f2e88bd6d58}\label{interface_logical_scheme_manager_1_1_i_command_configuration_ab4999110db6a2b70877b1f2e88bd6d58}} 
+\index{LogicalSchemeManager.ICommandConfiguration@{LogicalSchemeManager.ICommandConfiguration}!EndPoint@{EndPoint}}
+\index{EndPoint@{EndPoint}!LogicalSchemeManager.ICommandConfiguration@{LogicalSchemeManager.ICommandConfiguration}}
+\doxysubsubsection{\texorpdfstring{EndPoint}{EndPoint}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} Logical\+Scheme\+Manager.\+ICommand\+Configuration.\+End\+Point\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The abstract property exposes the ending point of the command 
+
+\mbox{\Hypertarget{interface_logical_scheme_manager_1_1_i_command_configuration_ade16d9fd83cad63dc62743600b54f540}\label{interface_logical_scheme_manager_1_1_i_command_configuration_ade16d9fd83cad63dc62743600b54f540}} 
+\index{LogicalSchemeManager.ICommandConfiguration@{LogicalSchemeManager.ICommandConfiguration}!Graph@{Graph}}
+\index{Graph@{Graph}!LogicalSchemeManager.ICommandConfiguration@{LogicalSchemeManager.ICommandConfiguration}}
+\doxysubsubsection{\texorpdfstring{Graph}{Graph}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}, \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}}\mbox{[}$\,$\mbox{]}$>$ Logical\+Scheme\+Manager.\+ICommand\+Configuration.\+Graph\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The abstract property exposes a dictionary 
+
+\mbox{\Hypertarget{interface_logical_scheme_manager_1_1_i_command_configuration_a1e544ef9cac0982552aa8b6f1b0d36bc}\label{interface_logical_scheme_manager_1_1_i_command_configuration_a1e544ef9cac0982552aa8b6f1b0d36bc}} 
+\index{LogicalSchemeManager.ICommandConfiguration@{LogicalSchemeManager.ICommandConfiguration}!StartPoint@{StartPoint}}
+\index{StartPoint@{StartPoint}!LogicalSchemeManager.ICommandConfiguration@{LogicalSchemeManager.ICommandConfiguration}}
+\doxysubsubsection{\texorpdfstring{StartPoint}{StartPoint}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command}{ICommand}} Logical\+Scheme\+Manager.\+ICommand\+Configuration.\+Start\+Point\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The abstract property exposes the starting point of the command 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Laboratoare/\+Anul\+\_\+\+III\+\_\+\+Sem\+\_\+\+II/\+Ingineria Proiectarii/\+Emergency/\+Logically\+Interpretor/\+Proiect/\+Program\+Manager/\+Command\+Config/ICommand\+Configuration.\+cs\end{DoxyCompactItemize}

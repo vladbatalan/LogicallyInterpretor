@@ -1,0 +1,108 @@
+\hypertarget{interface_logical_scheme_manager_1_1_i_observable}{}\doxysection{Logical\+Scheme\+Manager.\+IObservable Interface Reference}
+\label{interface_logical_scheme_manager_1_1_i_observable}\index{LogicalSchemeManager.IObservable@{LogicalSchemeManager.IObservable}}
+
+
+This object can be observer by an \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observable}{IObservable}}  
+
+
+Inheritance diagram for Logical\+Scheme\+Manager.\+IObservable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_logical_scheme_manager_1_1_i_observable}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observable_a106fa2141a3ee0386c4ed600cb410cc1}{Add\+Observer}} (\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observer}{IObserver}} observer)
+\begin{DoxyCompactList}\small\item\em Adds a new observer that can be notified \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observable_ad4d835b1aa99c61f79d0401330ff819c}{Remove\+Observer}} (\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observer}{IObserver}} observer)
+\begin{DoxyCompactList}\small\item\em Removes an existing observer \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observable_a7a674d9d5b18ffbc5c0467f954cbe328}{Notify\+Observers}} (string text)
+\begin{DoxyCompactList}\small\item\em Send a message to all the observers that are subscribed \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observable_a84102d9cd42c909c24c08a9edee0bcbc}{Clear\+All\+Observers}} ()
+\begin{DoxyCompactList}\small\item\em Removes all the observers that are subscribed to this \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This object can be observer by an \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observable}{IObservable}} 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_logical_scheme_manager_1_1_i_observable_a106fa2141a3ee0386c4ed600cb410cc1}\label{interface_logical_scheme_manager_1_1_i_observable_a106fa2141a3ee0386c4ed600cb410cc1}} 
+\index{LogicalSchemeManager.IObservable@{LogicalSchemeManager.IObservable}!AddObserver@{AddObserver}}
+\index{AddObserver@{AddObserver}!LogicalSchemeManager.IObservable@{LogicalSchemeManager.IObservable}}
+\doxysubsubsection{\texorpdfstring{AddObserver()}{AddObserver()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Manager.\+IObservable.\+Add\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observer}{IObserver}}}]{observer }\end{DoxyParamCaption})}
+
+
+
+Adds a new observer that can be notified 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The observer that subscribes to this\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_logical_scheme_manager_1_1_write_variable_value_a47ecd782ea8fead6e8c3a77831bbe0c4}{Logical\+Scheme\+Manager.\+Write\+Variable\+Value}}, and \mbox{\hyperlink{class_logical_scheme_manager_1_1_write_text_afa274048f764b02abdb5564a93145ed1}{Logical\+Scheme\+Manager.\+Write\+Text}}.
+
+\mbox{\Hypertarget{interface_logical_scheme_manager_1_1_i_observable_a84102d9cd42c909c24c08a9edee0bcbc}\label{interface_logical_scheme_manager_1_1_i_observable_a84102d9cd42c909c24c08a9edee0bcbc}} 
+\index{LogicalSchemeManager.IObservable@{LogicalSchemeManager.IObservable}!ClearAllObservers@{ClearAllObservers}}
+\index{ClearAllObservers@{ClearAllObservers}!LogicalSchemeManager.IObservable@{LogicalSchemeManager.IObservable}}
+\doxysubsubsection{\texorpdfstring{ClearAllObservers()}{ClearAllObservers()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Manager.\+IObservable.\+Clear\+All\+Observers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes all the observers that are subscribed to this 
+
+
+
+Implemented in \mbox{\hyperlink{class_logical_scheme_manager_1_1_write_variable_value_a646b1b650e329aeee71824edc0a3be66}{Logical\+Scheme\+Manager.\+Write\+Variable\+Value}}, and \mbox{\hyperlink{class_logical_scheme_manager_1_1_write_text_a75acb02628dd0b04677fd6aa8e0a1c12}{Logical\+Scheme\+Manager.\+Write\+Text}}.
+
+\mbox{\Hypertarget{interface_logical_scheme_manager_1_1_i_observable_a7a674d9d5b18ffbc5c0467f954cbe328}\label{interface_logical_scheme_manager_1_1_i_observable_a7a674d9d5b18ffbc5c0467f954cbe328}} 
+\index{LogicalSchemeManager.IObservable@{LogicalSchemeManager.IObservable}!NotifyObservers@{NotifyObservers}}
+\index{NotifyObservers@{NotifyObservers}!LogicalSchemeManager.IObservable@{LogicalSchemeManager.IObservable}}
+\doxysubsubsection{\texorpdfstring{NotifyObservers()}{NotifyObservers()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Manager.\+IObservable.\+Notify\+Observers (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})}
+
+
+
+Send a message to all the observers that are subscribed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The notification message\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_logical_scheme_manager_1_1_write_variable_value_a4180c5b8bad80c151a685e39172dac62}{Logical\+Scheme\+Manager.\+Write\+Variable\+Value}}, and \mbox{\hyperlink{class_logical_scheme_manager_1_1_write_text_a931d1c1b57dab03983d62c39d2f03944}{Logical\+Scheme\+Manager.\+Write\+Text}}.
+
+\mbox{\Hypertarget{interface_logical_scheme_manager_1_1_i_observable_ad4d835b1aa99c61f79d0401330ff819c}\label{interface_logical_scheme_manager_1_1_i_observable_ad4d835b1aa99c61f79d0401330ff819c}} 
+\index{LogicalSchemeManager.IObservable@{LogicalSchemeManager.IObservable}!RemoveObserver@{RemoveObserver}}
+\index{RemoveObserver@{RemoveObserver}!LogicalSchemeManager.IObservable@{LogicalSchemeManager.IObservable}}
+\doxysubsubsection{\texorpdfstring{RemoveObserver()}{RemoveObserver()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Manager.\+IObservable.\+Remove\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observer}{IObserver}}}]{observer }\end{DoxyParamCaption})}
+
+
+
+Removes an existing observer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The observer that is to be removed\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_logical_scheme_manager_1_1_write_variable_value_a03e8893cc634d7606e4d432e449196ac}{Logical\+Scheme\+Manager.\+Write\+Variable\+Value}}, and \mbox{\hyperlink{class_logical_scheme_manager_1_1_write_text_a7ba93c60df061111569005391a9a1add}{Logical\+Scheme\+Manager.\+Write\+Text}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Laboratoare/\+Anul\+\_\+\+III\+\_\+\+Sem\+\_\+\+II/\+Ingineria Proiectarii/\+Emergency/\+Logically\+Interpretor/\+Proiect/\+Program\+Manager/\+Observer/IObservable.\+cs\end{DoxyCompactItemize}

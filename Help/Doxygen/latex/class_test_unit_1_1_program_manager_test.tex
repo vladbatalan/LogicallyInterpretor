@@ -1,0 +1,232 @@
+\hypertarget{class_test_unit_1_1_program_manager_test}{}\doxysection{Test\+Unit.\+Program\+Manager\+Test Class Reference}
+\label{class_test_unit_1_1_program_manager_test}\index{TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}}
+
+
+This class contains all the tests required for Program Manager  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_test_unit_1_1_program_manager_test_a4717315ef40cc71099c59787ab6b93a1}{Test\+Initialization}} ()
+\begin{DoxyCompactList}\small\item\em This method is called before each test In this we assure the prerequisite of the tests \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_unit_1_1_program_manager_test_a945ef4a787994345ef36a8c681e03010}{Hello\+\_\+world\+\_\+test}} ()
+\begin{DoxyCompactList}\small\item\em This test checks if the followinf program\+: Start\+: Write\+Text(\char`\"{}\+Hello world\char`\"{}) End\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_unit_1_1_program_manager_test_a8052dd5b2c111ea76908e722c21cb5e4}{Sum\+\_\+of\+\_\+two\+\_\+variables}} ()
+\begin{DoxyCompactList}\small\item\em This test checks the following programe Start\+: Read\+Value(a); Read\+Value(b); sum = a + b; Write\+Variable(sum); End\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_unit_1_1_program_manager_test_a0eafba8a3fc870aa05b48b64a434a9a7}{Check\+\_\+divide\+\_\+by\+\_\+zero}} ()
+\begin{DoxyCompactList}\small\item\em This test checks the following program Start\+: sum = a / b; Write\+Variable(sum); End\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_unit_1_1_program_manager_test_a9cae8a945e850b21791e0b6c4d48adff}{Expression\+\_\+divide\+\_\+by\+\_\+zero}} ()
+\begin{DoxyCompactList}\small\item\em This test checks the following program Start\+: Read\+Value(a); Read\+Value(b); sum = (a + b) / (a -\/ b); Write\+Value(sum); End\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_unit_1_1_program_manager_test_af5a3c93307a2c4e21d2fcfd373f97cb7}{Decision\+\_\+command\+\_\+check}} ()
+\begin{DoxyCompactList}\small\item\em This test checks the following program\+: Start\+: Read\+Variable(a); if(a $>$ 10) Write\+Text(\char`\"{}\+True\char`\"{}) else Write\+TexT(\char`\"{}\+False\char`\"{}) End\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_unit_1_1_program_manager_test_ab20de70cb3dfdc3e860e61c7d1cc6cd4}{Loop\+\_\+program\+\_\+test}} ()
+\begin{DoxyCompactList}\small\item\em This test checks the following program\+: Start\+: Read\+Variable(n); Loop\+: if(i $<$ n) \{ Write\+Variable(i); i = i + 1; Jump\+To(\+Loop); \} End\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_unit_1_1_program_manager_test_a863308d71116b32c2a615ab2c984f3bb}{Wrong\+\_\+simple\+\_\+operator\+\_\+exception}} ()
+\begin{DoxyCompactList}\small\item\em This test checks if the operator is wrong, an exception is thrown. Program\+: Start\+: b = 10; c = 20; a = b $^\wedge$ c; Write\+Variable(a); End\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_unit_1_1_program_manager_test_abc115753aec285c1ed976b45d806a771}{Wrong\+\_\+relational\+\_\+operator}} ()
+\begin{DoxyCompactList}\small\item\em This test checks if a relational operator is wrong, an exception is called. Program\+: Start\+: b = 10; c = 20; if( b ? c ) \{ Write\+Text(\char`\"{}\+True\char`\"{}); \} else\{ Write\+Text(\char`\"{}\+False\char`\"{}); \} End\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_unit_1_1_program_manager_test_af970438f9868fb41247fdf10ae7e3788}{Complicated\+\_\+expression\+\_\+execution\+\_\+test}} ()
+\begin{DoxyCompactList}\small\item\em This test evaluates a complicated expression. Start\+: Read\+Value(a); Read\+Value(b); c = ((a + b)/(3$\ast$a) -\/ 25 + b) $\ast$ 3.\+6; Write\+Variable(c); End\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_unit_1_1_program_manager_test_ab3393836d8780ae802e253adf1df4264}{Infinite\+\_\+loop\+\_\+test}} ()
+\begin{DoxyCompactList}\small\item\em This test checks an infinite loop Program\+: Start\+: Begin\+Loop\+: End\+Loop End\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_unit_1_1_program_manager_test_aad954f76f6ef8523f1c078c8d0f489ce}{Imbricated\+\_\+if\+\_\+statements\+\_\+test}} ()
+\begin{DoxyCompactList}\small\item\em This test checks an imbricated if statement. Program\+: Start\+: Read\+Variable(a); if(a $>$ 1)\{ if(a $>$ 2)\{ if(a $>$ 3)\{ Write\+Text(\char`\"{}\+Level 3\char`\"{}); \} else \{ Write\+Text(\char`\"{}\+Level 2\char`\"{}); \} \} else\{ Write\+Text(\char`\"{}\+Level 1\char`\"{}); \} \} else\{ Write\+TexT(\char`\"{}\+Level 0\char`\"{}); \} ~\newline
+ End\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_unit_1_1_program_manager_test_aa9a72bff222d28579ce878ff5f63f669}{Mutiple\+\_\+chained\+\_\+attribs}} ()
+\begin{DoxyCompactList}\small\item\em This test checks the result of many chained attribs commands. Program\+: Start\+: a = 42; b = a + 1; c = b + 1; ... z = y + 1; Write\+Value(z); End\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_unit_1_1_program_manager_test_a08196515897c14ab3c0b6572810337a0}{Multipled\+\_\+chained\+\_\+\+Write\+Text}} ()
+\begin{DoxyCompactList}\small\item\em This test checks multiple Text\+Write to the logger Program\+: Start\+: Write\+Text(\char`\"{}\+Text1\textbackslash{}n\char`\"{}); Write\+Text(\char`\"{}\+Text2\textbackslash{}n\char`\"{}); Write\+Text(\char`\"{}\+Text3\textbackslash{}n\char`\"{}); Write\+Text(\char`\"{}\+Text4\textbackslash{}n\char`\"{}); ... Write\+Text(\char`\"{}\+Text100\textbackslash{}n\char`\"{}); End\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_unit_1_1_program_manager_test_a1ecfedef94991b6590b43784c5e08fe1}{Bind\+\_\+element\+\_\+first\+\_\+same\+\_\+parameter}} ()
+\begin{DoxyCompactList}\small\item\em This test checks if Connections.\+Bind\+First\+Element() with the same node Throws an exception Program\+: Start\+: if( True )\{ goto End; \} else\{ Self\+Connect\+: goto Self\+Connect; \} End\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_unit_1_1_program_manager_test_a72d391dccc78761bb9a3b279f22093b3}{Bind\+\_\+element\+\_\+second\+\_\+same\+\_\+parameter}} ()
+\begin{DoxyCompactList}\small\item\em This test checks if Connections.\+Bind\+Second\+Element() with the same node Throws an exception Program\+: Start\+: if( False )\{ goto End; \} else\{ goto if; \} End\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_unit_1_1_program_manager_test_aec342470fe577c089438ca971240a79f}{Check\+\_\+neg\+\_\+condition}} ()
+\begin{DoxyCompactList}\small\item\em This test checks if the Neg\+Condition works properly Program\+: Start\+: if( !(false) )\{ Write(\char`\"{}\+Good test\char`\"{}); \} else\{ Write(\char`\"{}\+Bad test\char`\"{}); \} End\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_test_unit_1_1_program_manager_test_a603f4f51fc9ee23fff5ed1d4322008e5}\label{class_test_unit_1_1_program_manager_test_a603f4f51fc9ee23fff5ed1d4322008e5}} 
+void {\bfseries Test\+Cleanup} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class contains all the tests required for Program Manager 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_test_unit_1_1_program_manager_test_a1ecfedef94991b6590b43784c5e08fe1}\label{class_test_unit_1_1_program_manager_test_a1ecfedef94991b6590b43784c5e08fe1}} 
+\index{TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}!Bind\_element\_first\_same\_parameter@{Bind\_element\_first\_same\_parameter}}
+\index{Bind\_element\_first\_same\_parameter@{Bind\_element\_first\_same\_parameter}!TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}}
+\doxysubsubsection{\texorpdfstring{Bind\_element\_first\_same\_parameter()}{Bind\_element\_first\_same\_parameter()}}
+{\footnotesize\ttfamily void Test\+Unit.\+Program\+Manager\+Test.\+Bind\+\_\+element\+\_\+first\+\_\+same\+\_\+parameter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This test checks if Connections.\+Bind\+First\+Element() with the same node Throws an exception Program\+: Start\+: if( True )\{ goto End; \} else\{ Self\+Connect\+: goto Self\+Connect; \} End\+: 
+
+\mbox{\Hypertarget{class_test_unit_1_1_program_manager_test_a72d391dccc78761bb9a3b279f22093b3}\label{class_test_unit_1_1_program_manager_test_a72d391dccc78761bb9a3b279f22093b3}} 
+\index{TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}!Bind\_element\_second\_same\_parameter@{Bind\_element\_second\_same\_parameter}}
+\index{Bind\_element\_second\_same\_parameter@{Bind\_element\_second\_same\_parameter}!TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}}
+\doxysubsubsection{\texorpdfstring{Bind\_element\_second\_same\_parameter()}{Bind\_element\_second\_same\_parameter()}}
+{\footnotesize\ttfamily void Test\+Unit.\+Program\+Manager\+Test.\+Bind\+\_\+element\+\_\+second\+\_\+same\+\_\+parameter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This test checks if Connections.\+Bind\+Second\+Element() with the same node Throws an exception Program\+: Start\+: if( False )\{ goto End; \} else\{ goto if; \} End\+: 
+
+\mbox{\Hypertarget{class_test_unit_1_1_program_manager_test_a0eafba8a3fc870aa05b48b64a434a9a7}\label{class_test_unit_1_1_program_manager_test_a0eafba8a3fc870aa05b48b64a434a9a7}} 
+\index{TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}!Check\_divide\_by\_zero@{Check\_divide\_by\_zero}}
+\index{Check\_divide\_by\_zero@{Check\_divide\_by\_zero}!TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}}
+\doxysubsubsection{\texorpdfstring{Check\_divide\_by\_zero()}{Check\_divide\_by\_zero()}}
+{\footnotesize\ttfamily void Test\+Unit.\+Program\+Manager\+Test.\+Check\+\_\+divide\+\_\+by\+\_\+zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This test checks the following program Start\+: sum = a / b; Write\+Variable(sum); End\+: 
+
+\mbox{\Hypertarget{class_test_unit_1_1_program_manager_test_aec342470fe577c089438ca971240a79f}\label{class_test_unit_1_1_program_manager_test_aec342470fe577c089438ca971240a79f}} 
+\index{TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}!Check\_neg\_condition@{Check\_neg\_condition}}
+\index{Check\_neg\_condition@{Check\_neg\_condition}!TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}}
+\doxysubsubsection{\texorpdfstring{Check\_neg\_condition()}{Check\_neg\_condition()}}
+{\footnotesize\ttfamily void Test\+Unit.\+Program\+Manager\+Test.\+Check\+\_\+neg\+\_\+condition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This test checks if the Neg\+Condition works properly Program\+: Start\+: if( !(false) )\{ Write(\char`\"{}\+Good test\char`\"{}); \} else\{ Write(\char`\"{}\+Bad test\char`\"{}); \} End\+: 
+
+\mbox{\Hypertarget{class_test_unit_1_1_program_manager_test_af970438f9868fb41247fdf10ae7e3788}\label{class_test_unit_1_1_program_manager_test_af970438f9868fb41247fdf10ae7e3788}} 
+\index{TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}!Complicated\_expression\_execution\_test@{Complicated\_expression\_execution\_test}}
+\index{Complicated\_expression\_execution\_test@{Complicated\_expression\_execution\_test}!TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}}
+\doxysubsubsection{\texorpdfstring{Complicated\_expression\_execution\_test()}{Complicated\_expression\_execution\_test()}}
+{\footnotesize\ttfamily void Test\+Unit.\+Program\+Manager\+Test.\+Complicated\+\_\+expression\+\_\+execution\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This test evaluates a complicated expression. Start\+: Read\+Value(a); Read\+Value(b); c = ((a + b)/(3$\ast$a) -\/ 25 + b) $\ast$ 3.\+6; Write\+Variable(c); End\+: 
+
+\mbox{\Hypertarget{class_test_unit_1_1_program_manager_test_af5a3c93307a2c4e21d2fcfd373f97cb7}\label{class_test_unit_1_1_program_manager_test_af5a3c93307a2c4e21d2fcfd373f97cb7}} 
+\index{TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}!Decision\_command\_check@{Decision\_command\_check}}
+\index{Decision\_command\_check@{Decision\_command\_check}!TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}}
+\doxysubsubsection{\texorpdfstring{Decision\_command\_check()}{Decision\_command\_check()}}
+{\footnotesize\ttfamily void Test\+Unit.\+Program\+Manager\+Test.\+Decision\+\_\+command\+\_\+check (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This test checks the following program\+: Start\+: Read\+Variable(a); if(a $>$ 10) Write\+Text(\char`\"{}\+True\char`\"{}) else Write\+TexT(\char`\"{}\+False\char`\"{}) End\+: 
+
+\mbox{\Hypertarget{class_test_unit_1_1_program_manager_test_a9cae8a945e850b21791e0b6c4d48adff}\label{class_test_unit_1_1_program_manager_test_a9cae8a945e850b21791e0b6c4d48adff}} 
+\index{TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}!Expression\_divide\_by\_zero@{Expression\_divide\_by\_zero}}
+\index{Expression\_divide\_by\_zero@{Expression\_divide\_by\_zero}!TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}}
+\doxysubsubsection{\texorpdfstring{Expression\_divide\_by\_zero()}{Expression\_divide\_by\_zero()}}
+{\footnotesize\ttfamily void Test\+Unit.\+Program\+Manager\+Test.\+Expression\+\_\+divide\+\_\+by\+\_\+zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This test checks the following program Start\+: Read\+Value(a); Read\+Value(b); sum = (a + b) / (a -\/ b); Write\+Value(sum); End\+: 
+
+\mbox{\Hypertarget{class_test_unit_1_1_program_manager_test_a945ef4a787994345ef36a8c681e03010}\label{class_test_unit_1_1_program_manager_test_a945ef4a787994345ef36a8c681e03010}} 
+\index{TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}!Hello\_world\_test@{Hello\_world\_test}}
+\index{Hello\_world\_test@{Hello\_world\_test}!TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}}
+\doxysubsubsection{\texorpdfstring{Hello\_world\_test()}{Hello\_world\_test()}}
+{\footnotesize\ttfamily void Test\+Unit.\+Program\+Manager\+Test.\+Hello\+\_\+world\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This test checks if the followinf program\+: Start\+: Write\+Text(\char`\"{}\+Hello world\char`\"{}) End\+: 
+
+\mbox{\Hypertarget{class_test_unit_1_1_program_manager_test_aad954f76f6ef8523f1c078c8d0f489ce}\label{class_test_unit_1_1_program_manager_test_aad954f76f6ef8523f1c078c8d0f489ce}} 
+\index{TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}!Imbricated\_if\_statements\_test@{Imbricated\_if\_statements\_test}}
+\index{Imbricated\_if\_statements\_test@{Imbricated\_if\_statements\_test}!TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}}
+\doxysubsubsection{\texorpdfstring{Imbricated\_if\_statements\_test()}{Imbricated\_if\_statements\_test()}}
+{\footnotesize\ttfamily void Test\+Unit.\+Program\+Manager\+Test.\+Imbricated\+\_\+if\+\_\+statements\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This test checks an imbricated if statement. Program\+: Start\+: Read\+Variable(a); if(a $>$ 1)\{ if(a $>$ 2)\{ if(a $>$ 3)\{ Write\+Text(\char`\"{}\+Level 3\char`\"{}); \} else \{ Write\+Text(\char`\"{}\+Level 2\char`\"{}); \} \} else\{ Write\+Text(\char`\"{}\+Level 1\char`\"{}); \} \} else\{ Write\+TexT(\char`\"{}\+Level 0\char`\"{}); \} ~\newline
+ End\+: 
+
+\mbox{\Hypertarget{class_test_unit_1_1_program_manager_test_ab3393836d8780ae802e253adf1df4264}\label{class_test_unit_1_1_program_manager_test_ab3393836d8780ae802e253adf1df4264}} 
+\index{TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}!Infinite\_loop\_test@{Infinite\_loop\_test}}
+\index{Infinite\_loop\_test@{Infinite\_loop\_test}!TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}}
+\doxysubsubsection{\texorpdfstring{Infinite\_loop\_test()}{Infinite\_loop\_test()}}
+{\footnotesize\ttfamily void Test\+Unit.\+Program\+Manager\+Test.\+Infinite\+\_\+loop\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This test checks an infinite loop Program\+: Start\+: Begin\+Loop\+: End\+Loop End\+: 
+
+\mbox{\Hypertarget{class_test_unit_1_1_program_manager_test_ab20de70cb3dfdc3e860e61c7d1cc6cd4}\label{class_test_unit_1_1_program_manager_test_ab20de70cb3dfdc3e860e61c7d1cc6cd4}} 
+\index{TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}!Loop\_program\_test@{Loop\_program\_test}}
+\index{Loop\_program\_test@{Loop\_program\_test}!TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}}
+\doxysubsubsection{\texorpdfstring{Loop\_program\_test()}{Loop\_program\_test()}}
+{\footnotesize\ttfamily void Test\+Unit.\+Program\+Manager\+Test.\+Loop\+\_\+program\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This test checks the following program\+: Start\+: Read\+Variable(n); Loop\+: if(i $<$ n) \{ Write\+Variable(i); i = i + 1; Jump\+To(\+Loop); \} End\+: 
+
+\mbox{\Hypertarget{class_test_unit_1_1_program_manager_test_a08196515897c14ab3c0b6572810337a0}\label{class_test_unit_1_1_program_manager_test_a08196515897c14ab3c0b6572810337a0}} 
+\index{TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}!Multipled\_chained\_WriteText@{Multipled\_chained\_WriteText}}
+\index{Multipled\_chained\_WriteText@{Multipled\_chained\_WriteText}!TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}}
+\doxysubsubsection{\texorpdfstring{Multipled\_chained\_WriteText()}{Multipled\_chained\_WriteText()}}
+{\footnotesize\ttfamily void Test\+Unit.\+Program\+Manager\+Test.\+Multipled\+\_\+chained\+\_\+\+Write\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This test checks multiple Text\+Write to the logger Program\+: Start\+: Write\+Text(\char`\"{}\+Text1\textbackslash{}n\char`\"{}); Write\+Text(\char`\"{}\+Text2\textbackslash{}n\char`\"{}); Write\+Text(\char`\"{}\+Text3\textbackslash{}n\char`\"{}); Write\+Text(\char`\"{}\+Text4\textbackslash{}n\char`\"{}); ... Write\+Text(\char`\"{}\+Text100\textbackslash{}n\char`\"{}); End\+: 
+
+\mbox{\Hypertarget{class_test_unit_1_1_program_manager_test_aa9a72bff222d28579ce878ff5f63f669}\label{class_test_unit_1_1_program_manager_test_aa9a72bff222d28579ce878ff5f63f669}} 
+\index{TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}!Mutiple\_chained\_attribs@{Mutiple\_chained\_attribs}}
+\index{Mutiple\_chained\_attribs@{Mutiple\_chained\_attribs}!TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}}
+\doxysubsubsection{\texorpdfstring{Mutiple\_chained\_attribs()}{Mutiple\_chained\_attribs()}}
+{\footnotesize\ttfamily void Test\+Unit.\+Program\+Manager\+Test.\+Mutiple\+\_\+chained\+\_\+attribs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This test checks the result of many chained attribs commands. Program\+: Start\+: a = 42; b = a + 1; c = b + 1; ... z = y + 1; Write\+Value(z); End\+: 
+
+\mbox{\Hypertarget{class_test_unit_1_1_program_manager_test_a8052dd5b2c111ea76908e722c21cb5e4}\label{class_test_unit_1_1_program_manager_test_a8052dd5b2c111ea76908e722c21cb5e4}} 
+\index{TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}!Sum\_of\_two\_variables@{Sum\_of\_two\_variables}}
+\index{Sum\_of\_two\_variables@{Sum\_of\_two\_variables}!TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}}
+\doxysubsubsection{\texorpdfstring{Sum\_of\_two\_variables()}{Sum\_of\_two\_variables()}}
+{\footnotesize\ttfamily void Test\+Unit.\+Program\+Manager\+Test.\+Sum\+\_\+of\+\_\+two\+\_\+variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This test checks the following programe Start\+: Read\+Value(a); Read\+Value(b); sum = a + b; Write\+Variable(sum); End\+: 
+
+\mbox{\Hypertarget{class_test_unit_1_1_program_manager_test_a4717315ef40cc71099c59787ab6b93a1}\label{class_test_unit_1_1_program_manager_test_a4717315ef40cc71099c59787ab6b93a1}} 
+\index{TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}!TestInitialization@{TestInitialization}}
+\index{TestInitialization@{TestInitialization}!TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}}
+\doxysubsubsection{\texorpdfstring{TestInitialization()}{TestInitialization()}}
+{\footnotesize\ttfamily void Test\+Unit.\+Program\+Manager\+Test.\+Test\+Initialization (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method is called before each test In this we assure the prerequisite of the tests 
+
+\mbox{\Hypertarget{class_test_unit_1_1_program_manager_test_abc115753aec285c1ed976b45d806a771}\label{class_test_unit_1_1_program_manager_test_abc115753aec285c1ed976b45d806a771}} 
+\index{TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}!Wrong\_relational\_operator@{Wrong\_relational\_operator}}
+\index{Wrong\_relational\_operator@{Wrong\_relational\_operator}!TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}}
+\doxysubsubsection{\texorpdfstring{Wrong\_relational\_operator()}{Wrong\_relational\_operator()}}
+{\footnotesize\ttfamily void Test\+Unit.\+Program\+Manager\+Test.\+Wrong\+\_\+relational\+\_\+operator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This test checks if a relational operator is wrong, an exception is called. Program\+: Start\+: b = 10; c = 20; if( b ? c ) \{ Write\+Text(\char`\"{}\+True\char`\"{}); \} else\{ Write\+Text(\char`\"{}\+False\char`\"{}); \} End\+: 
+
+\mbox{\Hypertarget{class_test_unit_1_1_program_manager_test_a863308d71116b32c2a615ab2c984f3bb}\label{class_test_unit_1_1_program_manager_test_a863308d71116b32c2a615ab2c984f3bb}} 
+\index{TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}!Wrong\_simple\_operator\_exception@{Wrong\_simple\_operator\_exception}}
+\index{Wrong\_simple\_operator\_exception@{Wrong\_simple\_operator\_exception}!TestUnit.ProgramManagerTest@{TestUnit.ProgramManagerTest}}
+\doxysubsubsection{\texorpdfstring{Wrong\_simple\_operator\_exception()}{Wrong\_simple\_operator\_exception()}}
+{\footnotesize\ttfamily void Test\+Unit.\+Program\+Manager\+Test.\+Wrong\+\_\+simple\+\_\+operator\+\_\+exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This test checks if the operator is wrong, an exception is thrown. Program\+: Start\+: b = 10; c = 20; a = b $^\wedge$ c; Write\+Variable(a); End\+: 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Laboratoare/\+Anul\+\_\+\+III\+\_\+\+Sem\+\_\+\+II/\+Ingineria Proiectarii/\+Emergency/\+Logically\+Interpretor/\+Proiect/\+Test\+Unit/Program\+Manager\+Test.\+cs\end{DoxyCompactItemize}

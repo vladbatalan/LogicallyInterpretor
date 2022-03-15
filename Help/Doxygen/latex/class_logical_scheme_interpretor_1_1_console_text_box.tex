@@ -1,0 +1,126 @@
+\hypertarget{class_logical_scheme_interpretor_1_1_console_text_box}{}\doxysection{Logical\+Scheme\+Interpretor.\+Console\+Text\+Box Class Reference}
+\label{class_logical_scheme_interpretor_1_1_console_text_box}\index{LogicalSchemeInterpretor.ConsoleTextBox@{LogicalSchemeInterpretor.ConsoleTextBox}}
+
+
+Outpusts and read text acting like a console  
+
+
+Inheritance diagram for Logical\+Scheme\+Interpretor.\+Console\+Text\+Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.441442cm]{class_logical_scheme_interpretor_1_1_console_text_box}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_console_text_box_abba0159fca7d2a23ee4f1ed60f26bc8b}{Notify}} (string text)
+\begin{DoxyCompactList}\small\item\em Method implemented from the IObserver interface and is writting text on the terminal \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_console_text_box_a3806ed5fdf3f12d6974438dc4f7ff8ef}{Read\+From\+Terminal}} ()
+\begin{DoxyCompactList}\small\item\em Method that returns the text introduced by the user on the terminal \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_console_text_box_a282e3aca159b99adb2aa37eddd9c3953}{Write\+To\+Terminal}} (string text)
+\begin{DoxyCompactList}\small\item\em Method used to write data on the console \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_console_text_box_a49b8defd8fb30b5a45e7fba9b25fa9f1}{Write\+To\+Rich\+Text\+Box}} (string text)
+\begin{DoxyCompactList}\small\item\em Method used to write data on the console \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_console_text_box_a308f56abb41ddd668fb630cc27b84901}{Append\+Text}} (string text, Color color)
+\begin{DoxyCompactList}\small\item\em Method used to write data on the console with a secified color \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Outpusts and read text acting like a console 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_console_text_box_a308f56abb41ddd668fb630cc27b84901}\label{class_logical_scheme_interpretor_1_1_console_text_box_a308f56abb41ddd668fb630cc27b84901}} 
+\index{LogicalSchemeInterpretor.ConsoleTextBox@{LogicalSchemeInterpretor.ConsoleTextBox}!AppendText@{AppendText}}
+\index{AppendText@{AppendText}!LogicalSchemeInterpretor.ConsoleTextBox@{LogicalSchemeInterpretor.ConsoleTextBox}}
+\doxysubsubsection{\texorpdfstring{AppendText()}{AppendText()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Interpretor.\+Console\+Text\+Box.\+Append\+Text (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Method used to write data on the console with a secified color 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The string written to the console\\
+\hline
+{\em color} & The string\textquotesingle{}s color\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_console_text_box_abba0159fca7d2a23ee4f1ed60f26bc8b}\label{class_logical_scheme_interpretor_1_1_console_text_box_abba0159fca7d2a23ee4f1ed60f26bc8b}} 
+\index{LogicalSchemeInterpretor.ConsoleTextBox@{LogicalSchemeInterpretor.ConsoleTextBox}!Notify@{Notify}}
+\index{Notify@{Notify}!LogicalSchemeInterpretor.ConsoleTextBox@{LogicalSchemeInterpretor.ConsoleTextBox}}
+\doxysubsubsection{\texorpdfstring{Notify()}{Notify()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Interpretor.\+Console\+Text\+Box.\+Notify (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})}
+
+
+
+Method implemented from the IObserver interface and is writting text on the terminal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Text to be written on the terminal\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observer_a7802551678b1c1081496058337ec63e4}{Logical\+Scheme\+Manager.\+IObserver}}.
+
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_console_text_box_a3806ed5fdf3f12d6974438dc4f7ff8ef}\label{class_logical_scheme_interpretor_1_1_console_text_box_a3806ed5fdf3f12d6974438dc4f7ff8ef}} 
+\index{LogicalSchemeInterpretor.ConsoleTextBox@{LogicalSchemeInterpretor.ConsoleTextBox}!ReadFromTerminal@{ReadFromTerminal}}
+\index{ReadFromTerminal@{ReadFromTerminal}!LogicalSchemeInterpretor.ConsoleTextBox@{LogicalSchemeInterpretor.ConsoleTextBox}}
+\doxysubsubsection{\texorpdfstring{ReadFromTerminal()}{ReadFromTerminal()}}
+{\footnotesize\ttfamily string Logical\+Scheme\+Interpretor.\+Console\+Text\+Box.\+Read\+From\+Terminal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method that returns the text introduced by the user on the terminal 
+
+\begin{DoxyReturn}{Returns}
+The input from the user
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_terminal_entity_a8e10f981898eafb9a66c381c43c766f3}{Logical\+Scheme\+Manager.\+ITerminal\+Entity}}.
+
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_console_text_box_a49b8defd8fb30b5a45e7fba9b25fa9f1}\label{class_logical_scheme_interpretor_1_1_console_text_box_a49b8defd8fb30b5a45e7fba9b25fa9f1}} 
+\index{LogicalSchemeInterpretor.ConsoleTextBox@{LogicalSchemeInterpretor.ConsoleTextBox}!WriteToRichTextBox@{WriteToRichTextBox}}
+\index{WriteToRichTextBox@{WriteToRichTextBox}!LogicalSchemeInterpretor.ConsoleTextBox@{LogicalSchemeInterpretor.ConsoleTextBox}}
+\doxysubsubsection{\texorpdfstring{WriteToRichTextBox()}{WriteToRichTextBox()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Interpretor.\+Console\+Text\+Box.\+Write\+To\+Rich\+Text\+Box (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})}
+
+
+
+Method used to write data on the console 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The string to be written to the console\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_console_text_box_a282e3aca159b99adb2aa37eddd9c3953}\label{class_logical_scheme_interpretor_1_1_console_text_box_a282e3aca159b99adb2aa37eddd9c3953}} 
+\index{LogicalSchemeInterpretor.ConsoleTextBox@{LogicalSchemeInterpretor.ConsoleTextBox}!WriteToTerminal@{WriteToTerminal}}
+\index{WriteToTerminal@{WriteToTerminal}!LogicalSchemeInterpretor.ConsoleTextBox@{LogicalSchemeInterpretor.ConsoleTextBox}}
+\doxysubsubsection{\texorpdfstring{WriteToTerminal()}{WriteToTerminal()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Interpretor.\+Console\+Text\+Box.\+Write\+To\+Terminal (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})}
+
+
+
+Method used to write data on the console 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The string to be written to the console\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_terminal_entity_abffab07227fc0c1afb2fb2b1f344c23c}{Logical\+Scheme\+Manager.\+ITerminal\+Entity}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Laboratoare/\+Anul\+\_\+\+III\+\_\+\+Sem\+\_\+\+II/\+Ingineria Proiectarii/\+Emergency/\+Logically\+Interpretor/\+Proiect/\+Logical\+Scheme\+Interpretor/\+Console\+Class/Console\+Text\+Box.\+cs\end{DoxyCompactItemize}

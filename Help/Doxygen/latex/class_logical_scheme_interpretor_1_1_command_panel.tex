@@ -1,0 +1,356 @@
+\hypertarget{class_logical_scheme_interpretor_1_1_command_panel}{}\doxysection{Logical\+Scheme\+Interpretor.\+Command\+Panel Class Reference}
+\label{class_logical_scheme_interpretor_1_1_command_panel}\index{LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}}
+
+
+Base class for all the pannels on display implements the panel and Icomand  
+
+
+Inheritance diagram for Logical\+Scheme\+Interpretor.\+Command\+Panel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.277778cm]{class_logical_scheme_interpretor_1_1_command_panel}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_command_panel_a034639db177cac04e55a0b02303c6f95}{Execute}} ()
+\begin{DoxyCompactList}\small\item\em The abstract method incapsulates the execution of the command \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_command_panel_a3296f06d7781403f9c4c57baf43a04d0}\label{class_logical_scheme_interpretor_1_1_command_panel_a3296f06d7781403f9c4c57baf43a04d0}} 
+void {\bfseries Process\+String} (object sender, Event\+Args e)
+\item 
+\mbox{\hyperlink{class_logical_scheme_interpretor_1_1_command_panel_a06a710979b996196062193fdcd1fbfe6}{Command\+Panel}} ()
+\begin{DoxyCompactList}\small\item\em Implicit constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_logical_scheme_interpretor_1_1_command_panel_aba7b700e464f3bed876d384fae16c8b9}{Command\+Panel}} (\mbox{\hyperlink{class_logical_scheme_interpretor_1_1_program_manager_command}{Program\+Manager\+Command}} program\+Manager)
+\begin{DoxyCompactList}\small\item\em Constructor with parameters \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_command_panel_a034639db177cac04e55a0b02303c6f95}{Execute}} ()
+\begin{DoxyCompactList}\small\item\em Execute the block of commands \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_command_panel_a178d01e15472716232098b4d57286249}{Process\+String}} (object sender, Key\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Virtual callback method for the textbox process \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_logical_scheme_interpretor_1_1_command_panel}{Command\+Panel}} \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_command_panel_af359cf634eadda8022d76b319fd89097}{get\+Panel}} ()
+\begin{DoxyCompactList}\small\item\em Returns reference to this class \end{DoxyCompactList}\item 
+virtual Point \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_command_panel_aea0bd76cb07fd67f765887e2f368de90}{Get\+Up\+Location}} ()
+\begin{DoxyCompactList}\small\item\em Return point ot up label location \end{DoxyCompactList}\item 
+virtual Point \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_command_panel_a5f5036f03aefe62bfd84c4e56e1ee3b3}{Get\+Left\+Location}} ()
+\begin{DoxyCompactList}\small\item\em Return point ot left label location \end{DoxyCompactList}\item 
+virtual Point \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_command_panel_a2a0d5c689d1e88180b7c7c6e6626e7d1}{Get\+Right\+Location}} ()
+\begin{DoxyCompactList}\small\item\em Return point ot right label location \end{DoxyCompactList}\item 
+virtual Label \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_command_panel_ab5e541e91442cc7919f9c5ad8c48b470}{Getlabel1}} ()
+\begin{DoxyCompactList}\small\item\em Returns up label \end{DoxyCompactList}\item 
+virtual Label \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_command_panel_a3567468edb9802b633b0fae2e3a1d046}{Getlabel2}} ()
+\begin{DoxyCompactList}\small\item\em Return left label \end{DoxyCompactList}\item 
+virtual Label \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_command_panel_aabe2f2c3280e9534bf95497e65ac4c10}{Getlabel3}} ()
+\begin{DoxyCompactList}\small\item\em Return right label \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_command_panel_a9e7cef74bd234b9b424a8d765ed6fa46}{Label\+Up\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Callback for up label \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_command_panel_ac0a09f02667da1fbb83d3edf4611f2f2}{Label\+Left\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Callback for left label \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_command_panel_ab1cc6ad09c2bbdc64a130d563038dc30}{Label\+Right\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Callback for right label \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_logical_scheme_interpretor_1_1_program_manager_command}{Program\+Manager\+Command}} \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_command_panel_aeca12d986fe6fe8b42f5374dbd5b6d93}{\+\_\+program\+Manager}}
+\begin{DoxyCompactList}\small\item\em Reference to the program\+Manager \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command_type}{ICommand\+Type}} \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_command_panel_a3071f3a5fda006bae869e4a9b5af0c52}{Command\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The property that exposses the command type \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_logical_scheme_interpretor_1_1_program_manager_command}{Program\+Manager\+Command}} \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_command_panel_aebdcea6b34201cb67c03ec2ad38e0d96}{Program\+Manager}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The property that exposses program\+Manager \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for all the pannels on display implements the panel and Icomand 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_command_panel_a06a710979b996196062193fdcd1fbfe6}\label{class_logical_scheme_interpretor_1_1_command_panel_a06a710979b996196062193fdcd1fbfe6}} 
+\index{LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}!CommandPanel@{CommandPanel}}
+\index{CommandPanel@{CommandPanel}!LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}}
+\doxysubsubsection{\texorpdfstring{CommandPanel()}{CommandPanel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Logical\+Scheme\+Interpretor.\+Command\+Panel.\+Command\+Panel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implicit constructor 
+
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_command_panel_aba7b700e464f3bed876d384fae16c8b9}\label{class_logical_scheme_interpretor_1_1_command_panel_aba7b700e464f3bed876d384fae16c8b9}} 
+\index{LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}!CommandPanel@{CommandPanel}}
+\index{CommandPanel@{CommandPanel}!LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}}
+\doxysubsubsection{\texorpdfstring{CommandPanel()}{CommandPanel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Logical\+Scheme\+Interpretor.\+Command\+Panel.\+Command\+Panel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_logical_scheme_interpretor_1_1_program_manager_command}{Program\+Manager\+Command}}}]{program\+Manager }\end{DoxyParamCaption})}
+
+
+
+Constructor with parameters 
+
+
+\begin{DoxyParams}{Parameters}
+{\em program\+Manager} & reference to program\+Manager\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_command_panel_a034639db177cac04e55a0b02303c6f95}\label{class_logical_scheme_interpretor_1_1_command_panel_a034639db177cac04e55a0b02303c6f95}} 
+\index{LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}!Execute@{Execute}}
+\index{Execute@{Execute}!LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Interpretor.\+Command\+Panel.\+Execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The abstract method incapsulates the execution of the command 
+
+
+
+Implements \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command_afb9755c749cd1518eed3af7bf8925776}{Logical\+Scheme\+Manager.\+ICommand}}.
+
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_command_panel_a034639db177cac04e55a0b02303c6f95}\label{class_logical_scheme_interpretor_1_1_command_panel_a034639db177cac04e55a0b02303c6f95}} 
+\index{LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}!Execute@{Execute}}
+\index{Execute@{Execute}!LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Interpretor.\+Command\+Panel.\+Execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Execute the block of commands 
+
+
+
+Implements \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command_afb9755c749cd1518eed3af7bf8925776}{Logical\+Scheme\+Manager.\+ICommand}}.
+
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_command_panel_ab5e541e91442cc7919f9c5ad8c48b470}\label{class_logical_scheme_interpretor_1_1_command_panel_ab5e541e91442cc7919f9c5ad8c48b470}} 
+\index{LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}!Getlabel1@{Getlabel1}}
+\index{Getlabel1@{Getlabel1}!LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}}
+\doxysubsubsection{\texorpdfstring{Getlabel1()}{Getlabel1()}}
+{\footnotesize\ttfamily virtual Label Logical\+Scheme\+Interpretor.\+Command\+Panel.\+Getlabel1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns up label 
+
+\begin{DoxyReturn}{Returns}
+label1
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_write_variable_command_panel_ac0f32c2bc8bee3a1a6883010a5140806}{Logical\+Scheme\+Interpretor.\+Write\+Variable\+Command\+Panel}}, \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_write_text_command_panel_afbad67af0516f0d0dfc7b79e7f2dbf0c}{Logical\+Scheme\+Interpretor.\+Write\+Text\+Command\+Panel}}, \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_stop_command_panel_a4efe87d6e3d082b04adb0f3cfba3547f}{Logical\+Scheme\+Interpretor.\+Stop\+Command\+Panel}}, \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_read_variable_command_panel_a3cb6c10230bec37c2b96e778d9aa8be9}{Logical\+Scheme\+Interpretor.\+Read\+Variable\+Command\+Panel}}, \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_decision_command_panel_a00caeeec95dd77167a0eae73f9960bb8}{Logical\+Scheme\+Interpretor.\+Decision\+Command\+Panel}}, and \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_attrib_command_pannel_a1144c723985c01fb7db46e78bb23ffc6}{Logical\+Scheme\+Interpretor.\+Attrib\+Command\+Pannel}}.
+
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_command_panel_a3567468edb9802b633b0fae2e3a1d046}\label{class_logical_scheme_interpretor_1_1_command_panel_a3567468edb9802b633b0fae2e3a1d046}} 
+\index{LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}!Getlabel2@{Getlabel2}}
+\index{Getlabel2@{Getlabel2}!LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}}
+\doxysubsubsection{\texorpdfstring{Getlabel2()}{Getlabel2()}}
+{\footnotesize\ttfamily virtual Label Logical\+Scheme\+Interpretor.\+Command\+Panel.\+Getlabel2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return left label 
+
+\begin{DoxyReturn}{Returns}
+label2
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_write_variable_command_panel_a40ae07f05a91ed396ad05d2a8d1ff23a}{Logical\+Scheme\+Interpretor.\+Write\+Variable\+Command\+Panel}}, \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_write_text_command_panel_a3e4420babc54b0b907e33d1fd3ea758f}{Logical\+Scheme\+Interpretor.\+Write\+Text\+Command\+Panel}}, \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_start_command_panel_a566065973af00f8abca0628a2b43b83f}{Logical\+Scheme\+Interpretor.\+Start\+Command\+Panel}}, \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_read_variable_command_panel_a21ae16daa4965698d0bb5680d5be0a70}{Logical\+Scheme\+Interpretor.\+Read\+Variable\+Command\+Panel}}, \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_decision_command_panel_aad199734ca5050fdf3bf1a5f17146566}{Logical\+Scheme\+Interpretor.\+Decision\+Command\+Panel}}, and \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_attrib_command_pannel_a9e9caccf16183594a93673da87a46911}{Logical\+Scheme\+Interpretor.\+Attrib\+Command\+Pannel}}.
+
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_command_panel_aabe2f2c3280e9534bf95497e65ac4c10}\label{class_logical_scheme_interpretor_1_1_command_panel_aabe2f2c3280e9534bf95497e65ac4c10}} 
+\index{LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}!Getlabel3@{Getlabel3}}
+\index{Getlabel3@{Getlabel3}!LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}}
+\doxysubsubsection{\texorpdfstring{Getlabel3()}{Getlabel3()}}
+{\footnotesize\ttfamily virtual Label Logical\+Scheme\+Interpretor.\+Command\+Panel.\+Getlabel3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return right label 
+
+\begin{DoxyReturn}{Returns}
+label3
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_decision_command_panel_a2985c4329ee09c482969700bd05863ad}{Logical\+Scheme\+Interpretor.\+Decision\+Command\+Panel}}.
+
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_command_panel_a5f5036f03aefe62bfd84c4e56e1ee3b3}\label{class_logical_scheme_interpretor_1_1_command_panel_a5f5036f03aefe62bfd84c4e56e1ee3b3}} 
+\index{LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}!GetLeftLocation@{GetLeftLocation}}
+\index{GetLeftLocation@{GetLeftLocation}!LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}}
+\doxysubsubsection{\texorpdfstring{GetLeftLocation()}{GetLeftLocation()}}
+{\footnotesize\ttfamily virtual Point Logical\+Scheme\+Interpretor.\+Command\+Panel.\+Get\+Left\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return point ot left label location 
+
+\begin{DoxyReturn}{Returns}
+Point to label 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_write_variable_command_panel_a81a5165fa17b1b5472515fc816b118ac}{Logical\+Scheme\+Interpretor.\+Write\+Variable\+Command\+Panel}}, \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_write_text_command_panel_a5bc4eebe162c97c41f75bc34acb8f02b}{Logical\+Scheme\+Interpretor.\+Write\+Text\+Command\+Panel}}, \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_start_command_panel_a7a304c81734a5a9e62548e4bf2e581ea}{Logical\+Scheme\+Interpretor.\+Start\+Command\+Panel}}, \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_read_variable_command_panel_a9be9e5d575799d8339b0967a23fbdd8e}{Logical\+Scheme\+Interpretor.\+Read\+Variable\+Command\+Panel}}, \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_decision_command_panel_a9ce5ed4257002613929bddeaafbdab46}{Logical\+Scheme\+Interpretor.\+Decision\+Command\+Panel}}, and \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_attrib_command_pannel_a1a9181fff136085f7061b7bfde61bcf0}{Logical\+Scheme\+Interpretor.\+Attrib\+Command\+Pannel}}.
+
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_command_panel_af359cf634eadda8022d76b319fd89097}\label{class_logical_scheme_interpretor_1_1_command_panel_af359cf634eadda8022d76b319fd89097}} 
+\index{LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}!getPanel@{getPanel}}
+\index{getPanel@{getPanel}!LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}}
+\doxysubsubsection{\texorpdfstring{getPanel()}{getPanel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_command_panel}{Command\+Panel}} Logical\+Scheme\+Interpretor.\+Command\+Panel.\+get\+Panel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns reference to this class 
+
+\begin{DoxyReturn}{Returns}
+Cammandpannel class
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_command_panel_a2a0d5c689d1e88180b7c7c6e6626e7d1}\label{class_logical_scheme_interpretor_1_1_command_panel_a2a0d5c689d1e88180b7c7c6e6626e7d1}} 
+\index{LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}!GetRightLocation@{GetRightLocation}}
+\index{GetRightLocation@{GetRightLocation}!LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}}
+\doxysubsubsection{\texorpdfstring{GetRightLocation()}{GetRightLocation()}}
+{\footnotesize\ttfamily virtual Point Logical\+Scheme\+Interpretor.\+Command\+Panel.\+Get\+Right\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return point ot right label location 
+
+\begin{DoxyReturn}{Returns}
+Point to label 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_decision_command_panel_af30eeaf1892097026fae26917700ae6d}{Logical\+Scheme\+Interpretor.\+Decision\+Command\+Panel}}.
+
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_command_panel_aea0bd76cb07fd67f765887e2f368de90}\label{class_logical_scheme_interpretor_1_1_command_panel_aea0bd76cb07fd67f765887e2f368de90}} 
+\index{LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}!GetUpLocation@{GetUpLocation}}
+\index{GetUpLocation@{GetUpLocation}!LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}}
+\doxysubsubsection{\texorpdfstring{GetUpLocation()}{GetUpLocation()}}
+{\footnotesize\ttfamily virtual Point Logical\+Scheme\+Interpretor.\+Command\+Panel.\+Get\+Up\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return point ot up label location 
+
+\begin{DoxyReturn}{Returns}
+Point to label 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_write_variable_command_panel_aad14d8487d4737e51b95705bee671f61}{Logical\+Scheme\+Interpretor.\+Write\+Variable\+Command\+Panel}}, \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_write_text_command_panel_ac45087f1ccde0361d27a56a926de8b17}{Logical\+Scheme\+Interpretor.\+Write\+Text\+Command\+Panel}}, \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_stop_command_panel_ac9e649560164dd7273c2fdb56ab1b1b7}{Logical\+Scheme\+Interpretor.\+Stop\+Command\+Panel}}, \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_read_variable_command_panel_ad4a125b9cc78dc4601877b2ccf735ca9}{Logical\+Scheme\+Interpretor.\+Read\+Variable\+Command\+Panel}}, \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_decision_command_panel_afa18fd2831f2875bbe85a65d0852e365}{Logical\+Scheme\+Interpretor.\+Decision\+Command\+Panel}}, and \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_attrib_command_pannel_a819a18301b9ba32b9dbf0304077d6004}{Logical\+Scheme\+Interpretor.\+Attrib\+Command\+Pannel}}.
+
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_command_panel_ac0a09f02667da1fbb83d3edf4611f2f2}\label{class_logical_scheme_interpretor_1_1_command_panel_ac0a09f02667da1fbb83d3edf4611f2f2}} 
+\index{LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}!LabelLeftClick@{LabelLeftClick}}
+\index{LabelLeftClick@{LabelLeftClick}!LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}}
+\doxysubsubsection{\texorpdfstring{LabelLeftClick()}{LabelLeftClick()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Interpretor.\+Command\+Panel.\+Label\+Left\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Callback for left label 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & sender\\
+\hline
+{\em e} & event args\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_command_panel_ab1cc6ad09c2bbdc64a130d563038dc30}\label{class_logical_scheme_interpretor_1_1_command_panel_ab1cc6ad09c2bbdc64a130d563038dc30}} 
+\index{LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}!LabelRightClick@{LabelRightClick}}
+\index{LabelRightClick@{LabelRightClick}!LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}}
+\doxysubsubsection{\texorpdfstring{LabelRightClick()}{LabelRightClick()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Interpretor.\+Command\+Panel.\+Label\+Right\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Callback for right label 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & sender\\
+\hline
+{\em e} & event args\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_command_panel_a9e7cef74bd234b9b424a8d765ed6fa46}\label{class_logical_scheme_interpretor_1_1_command_panel_a9e7cef74bd234b9b424a8d765ed6fa46}} 
+\index{LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}!LabelUpClick@{LabelUpClick}}
+\index{LabelUpClick@{LabelUpClick}!LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}}
+\doxysubsubsection{\texorpdfstring{LabelUpClick()}{LabelUpClick()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Interpretor.\+Command\+Panel.\+Label\+Up\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Callback for up label 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & sender\\
+\hline
+{\em e} & envent args\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_command_panel_a178d01e15472716232098b4d57286249}\label{class_logical_scheme_interpretor_1_1_command_panel_a178d01e15472716232098b4d57286249}} 
+\index{LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}!ProcessString@{ProcessString}}
+\index{ProcessString@{ProcessString}!LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}}
+\doxysubsubsection{\texorpdfstring{ProcessString()}{ProcessString()}}
+{\footnotesize\ttfamily virtual void Logical\+Scheme\+Interpretor.\+Command\+Panel.\+Process\+String (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Key\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Virtual callback method for the textbox process 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & sender of callback \\
+\hline
+{\em e} & key envent arguments\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_write_variable_command_panel_a4e0d67f887d3c86cad81bc3d65ddfbf1}{Logical\+Scheme\+Interpretor.\+Write\+Variable\+Command\+Panel}}, \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_write_text_command_panel_a20cb532a001e994fcaa8f369a47fcda2}{Logical\+Scheme\+Interpretor.\+Write\+Text\+Command\+Panel}}, \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_read_variable_command_panel_a63aa408fea6d97cfc1592d363ead441f}{Logical\+Scheme\+Interpretor.\+Read\+Variable\+Command\+Panel}}, \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_decision_command_panel_ad6b3a3252cb8b621aa8013a20e865e8b}{Logical\+Scheme\+Interpretor.\+Decision\+Command\+Panel}}, and \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_attrib_command_pannel_a1ae7fd1740100110acaed4f8f8dc4c76}{Logical\+Scheme\+Interpretor.\+Attrib\+Command\+Pannel}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_command_panel_aeca12d986fe6fe8b42f5374dbd5b6d93}\label{class_logical_scheme_interpretor_1_1_command_panel_aeca12d986fe6fe8b42f5374dbd5b6d93}} 
+\index{LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}!\_programManager@{\_programManager}}
+\index{\_programManager@{\_programManager}!LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}}
+\doxysubsubsection{\texorpdfstring{\_programManager}{\_programManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_program_manager_command}{Program\+Manager\+Command}} Logical\+Scheme\+Interpretor.\+Command\+Panel.\+\_\+program\+Manager\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reference to the program\+Manager 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_command_panel_a3071f3a5fda006bae869e4a9b5af0c52}\label{class_logical_scheme_interpretor_1_1_command_panel_a3071f3a5fda006bae869e4a9b5af0c52}} 
+\index{LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}!CommandType@{CommandType}}
+\index{CommandType@{CommandType}!LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}}
+\doxysubsubsection{\texorpdfstring{CommandType}{CommandType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command_type}{ICommand\+Type}} Logical\+Scheme\+Interpretor.\+Command\+Panel.\+Command\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The property that exposses the command type 
+
+\mbox{\Hypertarget{class_logical_scheme_interpretor_1_1_command_panel_aebdcea6b34201cb67c03ec2ad38e0d96}\label{class_logical_scheme_interpretor_1_1_command_panel_aebdcea6b34201cb67c03ec2ad38e0d96}} 
+\index{LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}!ProgramManager@{ProgramManager}}
+\index{ProgramManager@{ProgramManager}!LogicalSchemeInterpretor.CommandPanel@{LogicalSchemeInterpretor.CommandPanel}}
+\doxysubsubsection{\texorpdfstring{ProgramManager}{ProgramManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_logical_scheme_interpretor_1_1_program_manager_command}{Program\+Manager\+Command}} Logical\+Scheme\+Interpretor.\+Command\+Panel.\+Program\+Manager\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The property that exposses program\+Manager 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Laboratoare/\+Anul\+\_\+\+III\+\_\+\+Sem\+\_\+\+II/\+Ingineria Proiectarii/\+Emergency/\+Logically\+Interpretor/\+Proiect/\+Logical\+Scheme\+Interpretor/Command\+Panel.\+cs\end{DoxyCompactItemize}

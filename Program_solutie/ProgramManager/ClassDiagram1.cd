@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LogicalSchemeManager.CommandGraph" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAABQCEAAAAAAAAAAAADIAiAAAAACAAAAAg=</HashCode>
+      <FileName>CommandConfig\CommandGraph.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LogicalSchemeManager.Command" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAASAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\Command.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LogicalSchemeManager.Atribuire" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAQEAAAAAAAAAAAAAAIAAAAAAAEEEAA=</HashCode>
+      <FileName>CommandTypes\Atribuire.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LogicalSchemeManager.Decision" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAQEAAAAAAAAAAgAAAIAAAAAAAAAAgA=</HashCode>
+      <FileName>CommandTypes\Decision.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LogicalSchemeManager.Eticheta" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAQEAAAAAAQAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>CommandTypes\Eticheta.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LogicalSchemeManager.ReadVariable" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABBAQEAAAAAAACAAAAAAIAAAAAAAAEAAA=</HashCode>
+      <FileName>CommandTypes\ReadVariable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LogicalSchemeManager.WriteText" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAhAAEQEAAAAAAAAAAAAQAIIAAAACAAgAAA=</HashCode>
+      <FileName>CommandTypes\WriteText.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LogicalSchemeManager.WriteVariableValue" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAhAAEQEAAAAAAAAAAAAQAIAAAQAAAAgACA=</HashCode>
+      <FileName>CommandTypes\WriteVariableValue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LogicalSchemeManager.Condition" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAQAAAAAAEAAAQAAAAIAAAAAAAAAABAAABAAA=</HashCode>
+      <FileName>Condition\Condition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LogicalSchemeManager.ConstCondition" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAhAAAAAAA=</HashCode>
+      <FileName>Condition\ConstCondition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LogicalSchemeManager.NegCondition" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAEAAAAAAAAAAgAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Condition\NegCondition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LogicalSchemeManager.ConstValue" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Expression\ConstValue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LogicalSchemeManager.Expression" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQEAACAAgAAAAAEAAIAAAAABAAAAAA=</HashCode>
+      <FileName>Expression\Expression.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LogicalSchemeManager.Variable" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAIAAAAAAAAAQEAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Expression\Variable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LogicalSchemeManager.Operator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Operations\BasicOp\Operator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LogicalSchemeManager.RelationalOperator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAABAAAAIAA=</HashCode>
+      <FileName>Operations\RelationalOp\RelationalOperator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LogicalSchemeManager.ProgramManager" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAECAAAAAAAACAAAAAAAAAAAgAAACAACAAAAA=</HashCode>
+      <FileName>ProgramManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LogicalSchemeManager.ConsoleObject" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAgABAAAAAAAAAAAA=</HashCode>
+      <FileName>Terminal\ConsoleObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LogicalSchemeManager.Logger" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAACAAAAAAAEAAAAAAAABgARAAAAAAAAAAAA=</HashCode>
+      <FileName>Terminal\Logger.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LogicalSchemeManager.GlobalVariables" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABCAAAAAAAAAAAAAACQEAAAAAAAAAAAEA=</HashCode>
+      <FileName>VariableConfig\GlobalVariables.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="LogicalSchemeManager.ICommandConfiguration" Collapsed="true">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAABQAEAAAAAAAAAAAACAAiAAAAACAAAAAg=</HashCode>
+      <FileName>CommandConfig\ICommandConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LogicalSchemeManager.ICommand" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAASAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\ICommand.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LogicalSchemeManager.ICommandType" Collapsed="true">
+    <Position X="4" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>CommandTypes\ICommandType.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LogicalSchemeManager.ICondition" Collapsed="true">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Condition\ICondition.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LogicalSchemeManager.IExpression" Collapsed="true">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Expression\IExpression.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LogicalSchemeManager.IObservable" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAhAAAAAAAAAAAAAAAAAQAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Observer\IObservable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LogicalSchemeManager.IObserver" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Observer\IObserver.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LogicalSchemeManager.IOperator" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Operations\BasicOp\IOperator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LogicalSchemeManager.IRelationalOperator" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAIAA=</HashCode>
+      <FileName>Operations\RelationalOp\IRelationalOperator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LogicalSchemeManager.ITerminalEntity" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Terminal\ITerminalEntity.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="LogicalSchemeManager.IVariableConfiguration" Collapsed="true">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABCAAAAAAAAAAAAAACAEAAAAAAAAAAAEA=</HashCode>
+      <FileName>VariableConfig\IVariableConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

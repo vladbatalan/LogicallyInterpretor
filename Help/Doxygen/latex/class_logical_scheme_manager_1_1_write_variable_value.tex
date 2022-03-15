@@ -1,0 +1,200 @@
+\hypertarget{class_logical_scheme_manager_1_1_write_variable_value}{}\doxysection{Logical\+Scheme\+Manager.\+Write\+Variable\+Value Class Reference}
+\label{class_logical_scheme_manager_1_1_write_variable_value}\index{LogicalSchemeManager.WriteVariableValue@{LogicalSchemeManager.WriteVariableValue}}
+
+
+The execution of the command writes the value of a variable  
+
+
+Inheritance diagram for Logical\+Scheme\+Manager.\+Write\+Variable\+Value\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_logical_scheme_manager_1_1_write_variable_value}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_logical_scheme_manager_1_1_write_variable_value_a65c74765a27da2d952defaebe654bef2}{Write\+Variable\+Value}} (\mbox{\hyperlink{class_logical_scheme_manager_1_1_variable}{Variable}} var)
+\begin{DoxyCompactList}\small\item\em The one-\/parameter constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_logical_scheme_manager_1_1_write_variable_value_a0a39ad289aed0032e75d197428335bc0}{Write\+Variable\+Value}} (\mbox{\hyperlink{class_logical_scheme_manager_1_1_variable}{Variable}} var, \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observer}{IObserver}} terminal)
+\begin{DoxyCompactList}\small\item\em The two-\/parameters constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logical_scheme_manager_1_1_write_variable_value_a47ecd782ea8fead6e8c3a77831bbe0c4}{Add\+Observer}} (\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observer}{IObserver}} observer)
+\begin{DoxyCompactList}\small\item\em The method that add an output \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logical_scheme_manager_1_1_write_variable_value_abc48d39fecba9cd41e61c84538ac096f}{Execute}} ()
+\begin{DoxyCompactList}\small\item\em The method that writes the variable\textquotesingle{}s value \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_logical_scheme_manager_1_1_write_variable_value_a3ed2160e37505023f072590ba83ad52e}{Get\+Next}} ()
+\begin{DoxyCompactList}\small\item\em The command type has only the true branch \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logical_scheme_manager_1_1_write_variable_value_a4180c5b8bad80c151a685e39172dac62}{Notify\+Observers}} (string text)
+\begin{DoxyCompactList}\small\item\em The command type notify if there\textquotesingle{}s a text to be outputed \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logical_scheme_manager_1_1_write_variable_value_a03e8893cc634d7606e4d432e449196ac}{Remove\+Observer}} (\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observer}{IObserver}} observer)
+\begin{DoxyCompactList}\small\item\em The command type removes a text \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_logical_scheme_manager_1_1_write_variable_value_a646b1b650e329aeee71824edc0a3be66}{Clear\+All\+Observers}} ()
+\begin{DoxyCompactList}\small\item\em The command type removes the text \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_logical_scheme_manager_1_1_write_variable_value_ab0b4daf291d8752cfe302f723fec71bd}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Override method that returns a description of the class elements \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_logical_scheme_manager_1_1_variable}{Variable}} \mbox{\hyperlink{class_logical_scheme_manager_1_1_write_variable_value_a3d1ede10621ae552efebc6b6dcdc7950}{Variable}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The property that exposes the inner value \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The execution of the command writes the value of a variable 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_write_variable_value_a65c74765a27da2d952defaebe654bef2}\label{class_logical_scheme_manager_1_1_write_variable_value_a65c74765a27da2d952defaebe654bef2}} 
+\index{LogicalSchemeManager.WriteVariableValue@{LogicalSchemeManager.WriteVariableValue}!WriteVariableValue@{WriteVariableValue}}
+\index{WriteVariableValue@{WriteVariableValue}!LogicalSchemeManager.WriteVariableValue@{LogicalSchemeManager.WriteVariableValue}}
+\doxysubsubsection{\texorpdfstring{WriteVariableValue()}{WriteVariableValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Logical\+Scheme\+Manager.\+Write\+Variable\+Value.\+Write\+Variable\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_logical_scheme_manager_1_1_variable}{Variable}}}]{var }\end{DoxyParamCaption})}
+
+
+
+The one-\/parameter constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em var} & The value of variable to be written\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_write_variable_value_a0a39ad289aed0032e75d197428335bc0}\label{class_logical_scheme_manager_1_1_write_variable_value_a0a39ad289aed0032e75d197428335bc0}} 
+\index{LogicalSchemeManager.WriteVariableValue@{LogicalSchemeManager.WriteVariableValue}!WriteVariableValue@{WriteVariableValue}}
+\index{WriteVariableValue@{WriteVariableValue}!LogicalSchemeManager.WriteVariableValue@{LogicalSchemeManager.WriteVariableValue}}
+\doxysubsubsection{\texorpdfstring{WriteVariableValue()}{WriteVariableValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Logical\+Scheme\+Manager.\+Write\+Variable\+Value.\+Write\+Variable\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_logical_scheme_manager_1_1_variable}{Variable}}}]{var,  }\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observer}{IObserver}}}]{terminal }\end{DoxyParamCaption})}
+
+
+
+The two-\/parameters constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em var} & The value of variable to be written\\
+\hline
+{\em terminal} & The terminal\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_write_variable_value_a47ecd782ea8fead6e8c3a77831bbe0c4}\label{class_logical_scheme_manager_1_1_write_variable_value_a47ecd782ea8fead6e8c3a77831bbe0c4}} 
+\index{LogicalSchemeManager.WriteVariableValue@{LogicalSchemeManager.WriteVariableValue}!AddObserver@{AddObserver}}
+\index{AddObserver@{AddObserver}!LogicalSchemeManager.WriteVariableValue@{LogicalSchemeManager.WriteVariableValue}}
+\doxysubsubsection{\texorpdfstring{AddObserver()}{AddObserver()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Manager.\+Write\+Variable\+Value.\+Add\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observer}{IObserver}}}]{observer }\end{DoxyParamCaption})}
+
+
+
+The method that add an output 
+
+
+
+Implements \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observable_a106fa2141a3ee0386c4ed600cb410cc1}{Logical\+Scheme\+Manager.\+IObservable}}.
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_write_variable_value_a646b1b650e329aeee71824edc0a3be66}\label{class_logical_scheme_manager_1_1_write_variable_value_a646b1b650e329aeee71824edc0a3be66}} 
+\index{LogicalSchemeManager.WriteVariableValue@{LogicalSchemeManager.WriteVariableValue}!ClearAllObservers@{ClearAllObservers}}
+\index{ClearAllObservers@{ClearAllObservers}!LogicalSchemeManager.WriteVariableValue@{LogicalSchemeManager.WriteVariableValue}}
+\doxysubsubsection{\texorpdfstring{ClearAllObservers()}{ClearAllObservers()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Manager.\+Write\+Variable\+Value.\+Clear\+All\+Observers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The command type removes the text 
+
+
+
+Implements \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observable_a84102d9cd42c909c24c08a9edee0bcbc}{Logical\+Scheme\+Manager.\+IObservable}}.
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_write_variable_value_abc48d39fecba9cd41e61c84538ac096f}\label{class_logical_scheme_manager_1_1_write_variable_value_abc48d39fecba9cd41e61c84538ac096f}} 
+\index{LogicalSchemeManager.WriteVariableValue@{LogicalSchemeManager.WriteVariableValue}!Execute@{Execute}}
+\index{Execute@{Execute}!LogicalSchemeManager.WriteVariableValue@{LogicalSchemeManager.WriteVariableValue}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Manager.\+Write\+Variable\+Value.\+Execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The method that writes the variable\textquotesingle{}s value 
+
+
+
+Implements \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command_type_a9fbc18b566c2c190ccd1daf3ee4e6618}{Logical\+Scheme\+Manager.\+ICommand\+Type}}.
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_write_variable_value_a3ed2160e37505023f072590ba83ad52e}\label{class_logical_scheme_manager_1_1_write_variable_value_a3ed2160e37505023f072590ba83ad52e}} 
+\index{LogicalSchemeManager.WriteVariableValue@{LogicalSchemeManager.WriteVariableValue}!GetNext@{GetNext}}
+\index{GetNext@{GetNext}!LogicalSchemeManager.WriteVariableValue@{LogicalSchemeManager.WriteVariableValue}}
+\doxysubsubsection{\texorpdfstring{GetNext()}{GetNext()}}
+{\footnotesize\ttfamily bool Logical\+Scheme\+Manager.\+Write\+Variable\+Value.\+Get\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The command type has only the true branch 
+
+\begin{DoxyReturn}{Returns}
+Always returns true
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_command_type_acad184fafa635b213f8c43aec6ff044d}{Logical\+Scheme\+Manager.\+ICommand\+Type}}.
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_write_variable_value_a4180c5b8bad80c151a685e39172dac62}\label{class_logical_scheme_manager_1_1_write_variable_value_a4180c5b8bad80c151a685e39172dac62}} 
+\index{LogicalSchemeManager.WriteVariableValue@{LogicalSchemeManager.WriteVariableValue}!NotifyObservers@{NotifyObservers}}
+\index{NotifyObservers@{NotifyObservers}!LogicalSchemeManager.WriteVariableValue@{LogicalSchemeManager.WriteVariableValue}}
+\doxysubsubsection{\texorpdfstring{NotifyObservers()}{NotifyObservers()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Manager.\+Write\+Variable\+Value.\+Notify\+Observers (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})}
+
+
+
+The command type notify if there\textquotesingle{}s a text to be outputed 
+
+
+
+Implements \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observable_a7a674d9d5b18ffbc5c0467f954cbe328}{Logical\+Scheme\+Manager.\+IObservable}}.
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_write_variable_value_a03e8893cc634d7606e4d432e449196ac}\label{class_logical_scheme_manager_1_1_write_variable_value_a03e8893cc634d7606e4d432e449196ac}} 
+\index{LogicalSchemeManager.WriteVariableValue@{LogicalSchemeManager.WriteVariableValue}!RemoveObserver@{RemoveObserver}}
+\index{RemoveObserver@{RemoveObserver}!LogicalSchemeManager.WriteVariableValue@{LogicalSchemeManager.WriteVariableValue}}
+\doxysubsubsection{\texorpdfstring{RemoveObserver()}{RemoveObserver()}}
+{\footnotesize\ttfamily void Logical\+Scheme\+Manager.\+Write\+Variable\+Value.\+Remove\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observer}{IObserver}}}]{observer }\end{DoxyParamCaption})}
+
+
+
+The command type removes a text 
+
+
+
+Implements \mbox{\hyperlink{interface_logical_scheme_manager_1_1_i_observable_ad4d835b1aa99c61f79d0401330ff819c}{Logical\+Scheme\+Manager.\+IObservable}}.
+
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_write_variable_value_ab0b4daf291d8752cfe302f723fec71bd}\label{class_logical_scheme_manager_1_1_write_variable_value_ab0b4daf291d8752cfe302f723fec71bd}} 
+\index{LogicalSchemeManager.WriteVariableValue@{LogicalSchemeManager.WriteVariableValue}!ToString@{ToString}}
+\index{ToString@{ToString}!LogicalSchemeManager.WriteVariableValue@{LogicalSchemeManager.WriteVariableValue}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Logical\+Scheme\+Manager.\+Write\+Variable\+Value.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Override method that returns a description of the class elements 
+
+\begin{DoxyReturn}{Returns}
+A string that resembles the description of the class
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_logical_scheme_manager_1_1_write_variable_value_a3d1ede10621ae552efebc6b6dcdc7950}\label{class_logical_scheme_manager_1_1_write_variable_value_a3d1ede10621ae552efebc6b6dcdc7950}} 
+\index{LogicalSchemeManager.WriteVariableValue@{LogicalSchemeManager.WriteVariableValue}!Variable@{Variable}}
+\index{Variable@{Variable}!LogicalSchemeManager.WriteVariableValue@{LogicalSchemeManager.WriteVariableValue}}
+\doxysubsubsection{\texorpdfstring{Variable}{Variable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_logical_scheme_manager_1_1_variable}{Variable}} Logical\+Scheme\+Manager.\+Write\+Variable\+Value.\+Variable\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The property that exposes the inner value 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+:/\+Laboratoare/\+Anul\+\_\+\+III\+\_\+\+Sem\+\_\+\+II/\+Ingineria Proiectarii/\+Emergency/\+Logically\+Interpretor/\+Proiect/\+Program\+Manager/\+Command\+Types/Write\+Variable\+Value.\+cs\end{DoxyCompactItemize}
